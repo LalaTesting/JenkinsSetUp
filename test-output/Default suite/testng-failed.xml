@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Voot.smac.pages.test.HomePageTest">
+        <methods>
+          <include name="verifySearchinHomepage"/>
+          <include name="setBrowsers"/>
+          <include name="verifyMoviesmenuinHomepage"/>
+          <include name="verifyshowsmenuinHomepage"/>
+          <include name="closebrowser"/>
+          <include name="verifyuserloginiconinHomepage"/>
+          <include name="verifyChannelsmenuinHomepage"/>
+          <include name="verifykidsmenuinHomepage"/>
+          <include name="verifyVootLogoinHomePage"/>
+          <include name="verifynewshowLinkinHomePage"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.HomePageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

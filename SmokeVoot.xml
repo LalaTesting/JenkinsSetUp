@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel test suite">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+	<test name="Verification of Home page of voot application in chrome browser">
+	<parameter name="browsers" value="chrome"/>
+		<classes>
+			<class name="Voot.smac.pages.test.HomePageTest" />
+		</classes>
+	</test>
+	
+</suite>
