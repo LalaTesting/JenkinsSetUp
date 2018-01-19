@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Parallel test suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
@@ -22,6 +22,13 @@
           <include name="verifynewshowLinkinHomePage"/>
         </methods>
       </class> <!-- Voot.smac.pages.test.HomePageTest -->
+      <class name="Voot.smac.pages.test.ShowPagesTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="closebrowser"/>
+          <include name="clickedshowlink"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
     </classes>
   </test> <!-- Verification of Home page of voot application in chrome browser(failed) -->
 </suite> <!-- Failed suite [Parallel test suite] -->
