@@ -160,6 +160,21 @@
           <div class="suite-Parallel_test_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">Voot.smac.pages.test.ShowPagesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickedshowlink">
+                  </a> <!-- clickedshowlink -->
+                  <span class="method-name">clickedshowlink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Parallel_test_suite-class-passed -->
+          <div class="suite-Parallel_test_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">Voot.smac.pages.test.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -237,21 +252,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Parallel_test_suite-class-passed -->
-          <div class="suite-Parallel_test_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Voot.smac.pages.test.ShowPagesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickedshowlink">
-                  </a> <!-- clickedshowlink -->
-                  <span class="method-name">clickedshowlink</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Parallel_test_suite-class-passed -->
         </div> <!-- panel Parallel_test_suite -->
         <div panel-name="test-xml-Parallel_test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -261,18 +261,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Parallel test suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Parallel test suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test verbose=&quot;0&quot; name=&quot;Verification of Home page of voot application in chrome browser&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Verification of Home page of voot application in chrome browser&quot;&gt;
     &lt;parameter name=&quot;browsers&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Voot.smac.pages.test.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Verification of Home page of voot application in chrome browser --&gt;
-  &lt;test verbose=&quot;0&quot; name=&quot;Verification of Show page of voot application in chrome browser&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Verification of Show page of voot application in chrome browser&quot;&gt;
     &lt;parameter name=&quot;browsers&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Voot.smac.pages.test.ShowPagesTest&quot;/&gt;
@@ -358,39 +358,39 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'clickedshowlink')
 data.setCell(0, 2, 'Voot.smac.pages.test.ShowPagesTest')
-data.setCell(0, 3, 3768);
+data.setCell(0, 3, 3579);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifynewshowLinkinHomePage')
+data.setCell(1, 1, 'verifyshowsmenuinHomepage')
 data.setCell(1, 2, 'Voot.smac.pages.test.HomePageTest')
-data.setCell(1, 3, 325);
+data.setCell(1, 3, 231);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyVootLogoinHomePage')
 data.setCell(2, 2, 'Voot.smac.pages.test.HomePageTest')
-data.setCell(2, 3, 289);
+data.setCell(2, 3, 179);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifykidsmenuinHomepage')
+data.setCell(3, 1, 'verifynewshowLinkinHomePage')
 data.setCell(3, 2, 'Voot.smac.pages.test.HomePageTest')
-data.setCell(3, 3, 95);
+data.setCell(3, 3, 79);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyshowsmenuinHomepage')
+data.setCell(4, 1, 'verifyChannelsmenuinHomepage')
 data.setCell(4, 2, 'Voot.smac.pages.test.HomePageTest')
-data.setCell(4, 3, 80);
+data.setCell(4, 3, 52);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyMoviesmenuinHomepage')
 data.setCell(5, 2, 'Voot.smac.pages.test.HomePageTest')
-data.setCell(5, 3, 53);
+data.setCell(5, 3, 51);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyChannelsmenuinHomepage')
+data.setCell(6, 1, 'verifykidsmenuinHomepage')
 data.setCell(6, 2, 'Voot.smac.pages.test.HomePageTest')
-data.setCell(6, 3, 52);
+data.setCell(6, 3, 50);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifySearchinHomepage')
 data.setCell(7, 2, 'Voot.smac.pages.test.HomePageTest')
-data.setCell(7, 3, 32);
+data.setCell(7, 3, 33);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verifyuserloginiconinHomepage')
 data.setCell(8, 2, 'Voot.smac.pages.test.HomePageTest')
-data.setCell(8, 3, 32);
+data.setCell(8, 3, 31);
 window.suiteTableData['Parallel_test_suite']= { tableData: data, tableDiv: 'times-div-Parallel_test_suite'}
 return data;
 }
@@ -407,6 +407,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyshowsmenuinHomepage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">showsNameinshowmenu showsNameinshowmenu it is displaying & clickable in the portal</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">verifyVootLogoinHomePage</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">voot logo is present and it is displaying in the portal</span>
@@ -416,18 +422,6 @@ return data;
               <span class="reporter-method-name">verifyChannelsmenuinHomepage</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">channls link is displaying and it is clickable in the portal</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifynewshowLinkinHomePage</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">showName and it is displaying & BIGG BOSS S11 is clickable in the portal</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyshowsmenuinHomepage</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">showsNameinshowmenu showsNameinshowmenu it is displaying & clickable in the portal</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -446,6 +440,12 @@ return data;
               <span class="reporter-method-name">verifyuserloginiconinHomepage</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">User login logo is displaying and it is clickable in the portal</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifynewshowLinkinHomePage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">showName and it is displaying & RISING STAR S02 is clickable in the portal</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -482,54 +482,54 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyVootLogoinHomePage</span>
-                <span class="method-start">48013 ms</span>
+                <span class="method-start">11575 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifynewshowLinkinHomePage</span>
-                <span class="method-start">48305 ms</span>
+                <span class="method-start">11757 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyshowsmenuinHomepage</span>
-                <span class="method-start">48635 ms</span>
+                <span class="method-start">11837 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifykidsmenuinHomepage</span>
-                <span class="method-start">48715 ms</span>
+                <span class="method-start">12069 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyChannelsmenuinHomepage</span>
-                <span class="method-start">48811 ms</span>
+                <span class="method-start">12119 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyMoviesmenuinHomepage</span>
-                <span class="method-start">48864 ms</span>
+                <span class="method-start">12172 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySearchinHomepage</span>
-                <span class="method-start">48918 ms</span>
+                <span class="method-start">12224 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyuserloginiconinHomepage</span>
-                <span class="method-start">48950 ms</span>
+                <span class="method-start">12258 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">48982 ms</span>
+                <span class="method-start">12290 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Voot.smac.pages.test.ShowPagesTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setBrowsers(chrome)</span>
-                <span class="method-start">52262 ms</span>
+                <span class="method-start">15444 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">clickedshowlink</span>
-                <span class="method-start">100861 ms</span>
+                <span class="method-start">24012 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">104630 ms</span>
+                <span class="method-start">27591 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

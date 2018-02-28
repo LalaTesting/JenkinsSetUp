@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 public class HomaPage_Voot_Application {
@@ -28,7 +29,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifynewshow() {
-		WebElement newShow_bigbss = driver.findElement(By.id("biggBoss_dropbtn"));
+		WebElement newShow_bigbss = driver.findElement(By.id("risingStarS02_dropbtn"));
 		String showName = newShow_bigbss.getText();
 		System.out.println(showName);
 		if (newShow_bigbss.isDisplayed() && newShow_bigbss.isEnabled()) {
@@ -44,6 +45,7 @@ public class HomaPage_Voot_Application {
 		String showsNameinshowmenu = showdrop_down.getText();
 		System.out.println(showsNameinshowmenu);
 		if (showdrop_down.isDisplayed() && showdrop_down.isEnabled()) {
+		
 			System.out.println(showsNameinshowmenu + ":::::&" + showsNameinshowmenu
 					+ "it is displaying & clickable in the portal");
 			Reporter.log("showsNameinshowmenu showsNameinshowmenu it is displaying & clickable in the portal");

@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" verbose="0" name="Failed suite [Parallel test suite]">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Parallel test suite]">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test verbose="0" name="Verification of Home page of voot application in chrome browser(failed)">
+  <test verbose="0" name="Verification of Show page of voot application in chrome browser(failed)">
     <parameter name="browsers" value="chrome"/>
     <classes>
-      <class name="Voot.smac.pages.test.HomePageTest">
+      <class name="Voot.smac.pages.test.ShowPagesTest">
         <methods>
-          <include name="verifySearchinHomepage"/>
           <include name="setBrowsers"/>
-          <include name="verifyMoviesmenuinHomepage"/>
-          <include name="verifyshowsmenuinHomepage"/>
           <include name="closebrowser"/>
-          <include name="verifyuserloginiconinHomepage"/>
-          <include name="verifyChannelsmenuinHomepage"/>
-          <include name="verifykidsmenuinHomepage"/>
-          <include name="verifyVootLogoinHomePage"/>
-          <include name="verifynewshowLinkinHomePage"/>
+          <include name="clickedshowlink"/>
         </methods>
-      </class> <!-- Voot.smac.pages.test.HomePageTest -->
+      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
     </classes>
-  </test> <!-- Verification of Home page of voot application in chrome browser(failed) -->
+  </test> <!-- Verification of Show page of voot application in chrome browser(failed) -->
 </suite> <!-- Failed suite [Parallel test suite] -->

@@ -4,17 +4,17 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.958">
+           time="0.706">
   <properties />
   
   
-            <testcase name="verifyVootLogoinHomePage" time="0.289" classname="Voot.smac.pages.test.HomePageTest" />
+            <testcase name="verifyshowsmenuinHomepage" time="0.231" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyVootLogoinHomePage" time="0.179" classname="Voot.smac.pages.test.HomePageTest" />
                 <testcase name="verifyChannelsmenuinHomepage" time="0.052" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifynewshowLinkinHomePage" time="0.325" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyshowsmenuinHomepage" time="0.080" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifySearchinHomepage" time="0.032" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyMoviesmenuinHomepage" time="0.053" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyuserloginiconinHomepage" time="0.032" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifykidsmenuinHomepage" time="0.095" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifySearchinHomepage" time="0.033" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyMoviesmenuinHomepage" time="0.051" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyuserloginiconinHomepage" time="0.031" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifynewshowLinkinHomePage" time="0.079" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifykidsmenuinHomepage" time="0.050" classname="Voot.smac.pages.test.HomePageTest" />
       
 </testsuite>
