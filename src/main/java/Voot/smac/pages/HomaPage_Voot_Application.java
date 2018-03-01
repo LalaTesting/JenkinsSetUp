@@ -1,6 +1,7 @@
 package Voot.smac.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,8 @@ import org.testng.Reporter;
 
 public class HomaPage_Voot_Application {
 
+
+	
 	WebDriver driver;
 	By VootLogoXpath=By.xpath("//a[@class='voot-brand-logo']");
 	public HomaPage_Voot_Application(WebDriver driver) {
@@ -19,8 +22,11 @@ public class HomaPage_Voot_Application {
 
 	public boolean vootLogo() {
 		WebElement vootlogo = driver.findElement(VootLogoXpath);
+		
+
 
 		if (vootlogo.isDisplayed()) {
+			highLighterMethod(driver, vootlogo);
 			System.out.println("voot logo is present and it is displaying in the portal");
 			Reporter.log("voot logo is present and it is displaying in the portal");
 			return true;
@@ -29,10 +35,11 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifynewshow() {
-		WebElement newShow_bigbss = driver.findElement(By.id("risingStarS02_dropbtn"));
-		String showName = newShow_bigbss.getText();
+		WebElement newShow = driver.findElement(By.id("risingStarS02_dropbtn"));
+		highLighterMethod(driver, newShow);
+		String showName = newShow.getText();
 		System.out.println(showName);
-		if (newShow_bigbss.isDisplayed() && newShow_bigbss.isEnabled()) {
+		if (newShow.isDisplayed() && newShow.isEnabled()) {
 			System.out.println(showName + ":::::and it is displaying & " + showName + " is clickable in the portal");
 			Reporter.log("showName and it is displaying & " + showName + " is clickable in the portal");
 			return true;
@@ -42,6 +49,7 @@ public class HomaPage_Voot_Application {
 
 	public boolean verifyshowsSectionmenu() {
 		WebElement showdrop_down = driver.findElement(By.id("shows_dropbtn"));
+		highLighterMethod(driver, showdrop_down);
 		String showsNameinshowmenu = showdrop_down.getText();
 		System.out.println(showsNameinshowmenu);
 		if (showdrop_down.isDisplayed() && showdrop_down.isEnabled()) {
@@ -56,6 +64,7 @@ public class HomaPage_Voot_Application {
 
 	public boolean verifykidsSectionmenu() {
 		WebElement Kidsdrop_down = driver.findElement(By.id("kids_dropbtn"));
+		highLighterMethod(driver, Kidsdrop_down);
 		String kidsName = Kidsdrop_down.getText();
 		System.out.println(kidsName);
 		if (Kidsdrop_down.isDisplayed()) {
@@ -68,6 +77,7 @@ public class HomaPage_Voot_Application {
 
 	public boolean verifychannelSectionmenu() {
 		WebElement channeldrop_down = driver.findElement(By.id("channels_dropbtn"));
+		highLighterMethod(driver, channeldrop_down);
 		String channelName = channeldrop_down.getText();
 		System.out.println(channelName);
 		if (channeldrop_down.isDisplayed()) {
@@ -80,6 +90,7 @@ public class HomaPage_Voot_Application {
 
 	public boolean verifyMoviesSectionmenu() {
 		WebElement Moviesdrop_down = driver.findElement(By.id("movies_dropbtn"));
+		highLighterMethod(driver, Moviesdrop_down);
 		String MoviesName = Moviesdrop_down.getText();
 		System.out.println(MoviesName);
 		if (Moviesdrop_down.isDisplayed()) {
@@ -92,6 +103,7 @@ public class HomaPage_Voot_Application {
 
 	public boolean verifySearch_icon_inHeadermenu() {
 		WebElement searchIcon = driver.findElement(By.className("VSearch"));
+		highLighterMethod(driver, searchIcon);
 		if (searchIcon.isDisplayed()) {
 			System.out.println(" Search icon is displaying in the portal");
 			Reporter.log("Search icon is displaying and it is clickable in the portal");
@@ -102,11 +114,17 @@ public class HomaPage_Voot_Application {
 
 	public boolean verifyUserLogin_icon_in_Headermenu() {
 		WebElement UserLoginIcon = driver.findElement(By.className("user-login"));
+		highLighterMethod(driver, UserLoginIcon);
 		if (UserLoginIcon.isDisplayed()) {
 			System.out.println(" User login icon is displaying in the portal");
 			Reporter.log("User login logo is displaying and it is clickable in the portal");
 			return true;
 		} else
 			return false;
+	}
+	
+	public void highLighterMethod(WebDriver driver, WebElement element){
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
 	}
 }

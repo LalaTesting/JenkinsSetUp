@@ -20,6 +20,8 @@ public class BaseClass {
 	public WebDriver driver;
 	public HomaPage_Voot_Application homepage;
 	public ShowsPages showpage;
+	
+
 	// Just  i am adding authour in our code
 
 	@Parameters({ "browsers" })

@@ -4,17 +4,17 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.206">
+           time="0.903">
   <properties />
   
   
-            <testcase name="verifykidsmenuinHomepage" time="0.054" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyChannelsmenuinHomepage" time="0.057" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifynewshowLinkinHomePage" time="0.322" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifySearchinHomepage" time="0.039" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyuserloginiconinHomepage" time="0.043" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyVootLogoinHomePage" time="0.554" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyshowsmenuinHomepage" time="0.071" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyMoviesmenuinHomepage" time="0.066" classname="Voot.smac.pages.test.HomePageTest" />
+            <testcase name="verifykidsmenuinHomepage" time="0.068" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyshowsmenuinHomepage" time="0.089" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifySearchinHomepage" time="0.050" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyuserloginiconinHomepage" time="0.054" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifynewshowLinkinHomePage" time="0.264" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyMoviesmenuinHomepage" time="0.071" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyVootLogoinHomePage" time="0.240" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyChannelsmenuinHomepage" time="0.067" classname="Voot.smac.pages.test.HomePageTest" />
       
 </testsuite>
