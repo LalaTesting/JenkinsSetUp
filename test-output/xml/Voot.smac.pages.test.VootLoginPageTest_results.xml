@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verification of vot login page of voot application in chrome browser"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.468">
+  <properties />
+  
+  
+            <testcase name="verifyLoginScreeen" time="1.468" classname="Voot.smac.pages.test.VootLoginPageTest" />
+      
+</testsuite>

@@ -15,12 +15,13 @@ import org.testng.log4testng.Logger;
 
 import Voot.smac.pages.HomaPage_Voot_Application;
 import Voot.smac.pages.ShowsPages;
+import Voot.smac.pages.VootLoginPage;
 
 public class BaseClass {
 	public WebDriver driver;
 	public HomaPage_Voot_Application homepage;
 	public ShowsPages showpage;
-	
+	public VootLoginPage loginpage;
 
 	// Just  i am adding authour in our code
 
@@ -56,6 +57,8 @@ public class BaseClass {
 		homepage = new HomaPage_Voot_Application(driver);
 		
 		showpage=new ShowsPages(driver);
+		
+		loginpage=new VootLoginPage(driver);
 	}
 
 	@AfterClass

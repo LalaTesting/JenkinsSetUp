@@ -16,15 +16,18 @@ public class ShowsPages {
 	WebDriver driver;
 	WebElement showlink, featuredList,kids;
 	HomaPage_Voot_Application homepage=new HomaPage_Voot_Application(driver);
+	
 	public ShowsPages(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	public boolean clickShowsLinkinheader() throws InterruptedException {
+	public boolean clickShowsLinkinheader() throws InterruptedException 
+	{
 		showlink = driver.findElement(By.id("shows_dropbtn"));
 		homepage.highLighterMethod(driver, showlink);
 
-		if (showlink.isDisplayed()) {
+		if (showlink.isDisplayed())
+		{
 			System.out.println("show link is present in the homegage");
 
 			Reporter.log("show link is present in home page");
@@ -94,7 +97,8 @@ public class ShowsPages {
 		} else
 			return false;
 	}
-	public boolean clickKidsMenuLinkinheader() throws InterruptedException{
+	public boolean clickKidsMenuLinkinheader() throws InterruptedException
+	{
 		kids=driver.findElement(By.xpath("//div[@class='dropdown']/a[@id='kids_dropbtn']"));
 		homepage.highLighterMethod(driver, kids);
 		System.out.println("Header Kids Text is::::::::::::"+kids.getText());

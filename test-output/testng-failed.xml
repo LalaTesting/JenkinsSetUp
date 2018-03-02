@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Verification of vot login page of voot application in chrome browser(failed)">
+    <parameter name="browsers" value="chrome"/>
     <classes>
-      <class name="Voot.smac.pages.test.ShowPagesTest">
+      <class name="Voot.smac.pages.test.VootLoginPageTest">
         <methods>
           <include name="setBrowsers"/>
           <include name="closebrowser"/>
-          <include name="clickedshowlink"/>
+          <include name="verifyLoginScreeen"/>
         </methods>
-      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
+      </class> <!-- Voot.smac.pages.test.VootLoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Verification of vot login page of voot application in chrome browser(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

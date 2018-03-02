@@ -35,7 +35,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifynewshow() {
-		WebElement newShow = driver.findElement(By.id("risingStarS02_dropbtn"));
+		WebElement newShow = driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/a"));
 		highLighterMethod(driver, newShow);
 		String showName = newShow.getText();
 		System.out.println(showName);
