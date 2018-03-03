@@ -10,10 +10,11 @@ import org.testng.Reporter;
 
 public class HomaPage_Voot_Application {
 
-
+	
 	
 	WebDriver driver;
 	By VootLogoXpath=By.xpath("//a[@class='voot-brand-logo']");
+	
 	public HomaPage_Voot_Application(WebDriver driver) {
 
 		this.driver = driver;

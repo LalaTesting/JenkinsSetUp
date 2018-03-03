@@ -5,13 +5,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-import org.testng.log4testng.Logger;
 
 import Voot.smac.pages.HomaPage_Voot_Application;
 import Voot.smac.pages.ShowsPages;
@@ -22,6 +18,8 @@ public class BaseClass {
 	public HomaPage_Voot_Application homepage;
 	public ShowsPages showpage;
 	public VootLoginPage loginpage;
+	public GenericFunctions functios;
+	
 
 	// Just  i am adding authour in our code
 
@@ -49,7 +47,7 @@ public class BaseClass {
 		
 	
 		driver.get("https://alpha.voot.com/");
-		System.out.println("user has provided the Application URL");
+		System.out.println("user has Entered the Application URL");
 		driver.manage().window().maximize();
 		System.out.println("user has maximize the browser");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -59,6 +57,8 @@ public class BaseClass {
 		showpage=new ShowsPages(driver);
 		
 		loginpage=new VootLoginPage(driver);
+		
+		functios=new GenericFunctions (driver);
 	}
 
 	@AfterClass

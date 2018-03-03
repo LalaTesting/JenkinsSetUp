@@ -1,7 +1,8 @@
 
-public class ApplicationData {
+public class ApplicationData 
+{
 
-	public static String verifyloginpageInformationMessage="USE YOUR EMAIL ADDRESS";
+	public static String verifyloginpageInformationMessage = "USE YOUR EMAIL ADDRESS";
 	
 	
 }
