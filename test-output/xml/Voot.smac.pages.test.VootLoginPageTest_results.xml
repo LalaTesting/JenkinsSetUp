@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.366">
+           time="15.465">
   <properties />
   
   
-            <testcase name="verifyLoginScreeen" time="1.366" classname="Voot.smac.pages.test.VootLoginPageTest" />
+            <testcase name="verifyLoginScreeen" time="15.465" classname="Voot.smac.pages.test.VootLoginPageTest" />
       
 </testsuite>

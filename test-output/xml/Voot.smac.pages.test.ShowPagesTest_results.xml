@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Verification of Show page of voot application in chrome browser"
-           tests="1"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="15.066">
+           time="23.361">
   <properties />
   
   
-            <testcase name="clickedshowlink" time="15.066" classname="Voot.smac.pages.test.ShowPagesTest" />
+            <testcase name="clickedshowlink" time="15.051" classname="Voot.smac.pages.test.ShowPagesTest" />
+                <testcase name="clickedkidslink" time="8.310" classname="Voot.smac.pages.test.ShowPagesTest" />
       
 </testsuite>

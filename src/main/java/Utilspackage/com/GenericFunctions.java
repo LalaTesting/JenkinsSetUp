@@ -24,6 +24,9 @@ public class GenericFunctions
 		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
 	
+	public void sleepMode(int time) throws InterruptedException{
+		Thread.sleep(time);
+	}
 	public void explicitlyWaitCondition(WebDriver driver, int time ,WebElement  element )
 	{
 		System.out.println("Waiting for Element in Dom");
@@ -78,7 +81,10 @@ public class GenericFunctions
     	
     }
     
-    public void higlightElements(){
+    public void highLighterMethod(WebDriver driver, WebElement element){
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
+	}
     	
     }
-}
+
