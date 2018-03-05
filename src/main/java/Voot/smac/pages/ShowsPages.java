@@ -9,13 +9,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.Reporter;
 
-public class ShowsPages {
+import Utilspackage.com.ApplicationData;
+import Utilspackage.com.GenericFunctions;
+import Utilspackage.com.Uielements;
+
+public class ShowsPages extends Uielements {
 
 	WebDriver driver;
-	WebElement showlink, featuredList,kids;
+	WebElement showlink, featuredList,kids,most_watched_show;
 	HomaPage_Voot_Application homepage=new HomaPage_Voot_Application(driver);
+	GenericFunctions functios=new GenericFunctions(driver);
+	ApplicationData appdata=new ApplicationData();
 	
 	public ShowsPages(WebDriver driver) {
 		this.driver = driver;
@@ -82,17 +89,29 @@ public class ShowsPages {
 		
 	     for (WebElement vootAllShow : Allshowsmenu) {
 				
-				if(vootAllShow.getText().contains("2MAD")){
-					
+				if(vootAllShow.getText().contains("2MAD"))
+				{	
 				System.out.println(vootAllShow.getText());
+				System.out.println();
 				Thread.sleep(1000);
 				vootAllShow.click();
 				Thread.sleep(1000);
 				System.out.println("after click on the show current url is "+driver.getCurrentUrl());
+		     	String actualshowtitle =driver.getTitle();
+			    System.out.println("Verify after click on the show what is the title ::::::::::::::::::: "+actualshowtitle);
+				Assert.assertEquals(actualshowtitle, appdata.Show_title_is);
+				Thread.sleep(3000);
+				functios.scrollDown(driver);
+				
+				most_watched_show=  driver.findElement(By.xpath(More_button_mostwatchshow_xpath));
+                functios.explicitlyWaitCondition(driver, 20, most_watched_show);
+               functios.clickElement(driver, most_watched_show);
+                Thread.sleep(5000);
+				
+				
 			}
 			}
-		
-			Thread.sleep(3000);
+			
 			return true;
 		} else
 			return false;

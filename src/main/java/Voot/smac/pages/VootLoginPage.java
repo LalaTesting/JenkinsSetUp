@@ -43,6 +43,7 @@ public class VootLoginPage  extends Uielements{
 		if(Actualmessage.equals(appdata.verifyloginpageInformationMessage))
 		{
 			Reporter.log("This is the message getting from system "+Actualmessage );
+			System.out.println("atcual message is "+Actualmessage);
 			return true;
 		}
 		else

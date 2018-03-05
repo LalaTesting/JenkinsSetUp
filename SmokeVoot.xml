@@ -5,23 +5,31 @@
       <listener class-name="org.uncommons.reportng.HTMLReporter"/>
       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
+	
 	<test name="Verification of Home page of voot application in chrome browser">
 	<parameter name="browsers" value="chrome"/>
 		<classes>
 			<class name="Voot.smac.pages.test.HomePageTest" />	
 		</classes>
 	</test>
+		
 	<test name="Verification of Show page of voot application in chrome browser">
 	<parameter name="browsers" value="chrome"/>
 		<classes>
 			<class name="Voot.smac.pages.test.ShowPagesTest" />
 		</classes>
-	</test>
+	</test> 
+		
 	<test name="Verification of vot login page of voot application in chrome browser">
 	<parameter name="browsers" value="chrome"/>
 		<classes>
 			<class name="Voot.smac.pages.test.VootLoginPageTest" />
 		</classes>
 	</test>
+	 
 </suite>
+
+
+ 
+
 	

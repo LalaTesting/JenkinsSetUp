@@ -12,7 +12,7 @@ public class ShowPagesTest extends BaseClass {
 	}
 	
 	
-	@Test(priority =2,description="Verify weather user is able to click on the kids link on the header")
+	//@Test(priority =2,description="Verify weather user is able to click on the kids link on the header")
 	public void clickedkidslink() throws InterruptedException {
 		Assert.assertTrue(showpage.clickKidsMenuLinkinheader());
 	

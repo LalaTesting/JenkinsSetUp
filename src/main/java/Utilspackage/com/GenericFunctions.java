@@ -23,13 +23,23 @@ public class GenericFunctions
 	public void implicitwait(int time){
 		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
-	public void explicitlyWaitCondition(int time,By element){
+	
+	public void explicitlyWaitCondition(WebDriver driver, int time ,WebElement  element )
+	{
+		System.out.println("Waiting for Element in Dom");
 		WebDriverWait wait =new WebDriverWait(driver, time);
-				wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(element));
+			wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
-	public void scrollDown(By element){
-		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,250)", element);
+	public void scrollDown(WebDriver driver){
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		System.out.println("user are scrolling the application");
+        js.executeScript("javascript:window.scrollBy(250,350)");
+		/*JavascriptExecutor js=(JavascriptExecutor)driver;
+		
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", element);*/
+		
+		//js.executeScript("window.scrollBy(0,250)", element);
 		
 	}
     public void selectDropDownByIndex(WebElement element,int index){
@@ -55,8 +65,10 @@ public class GenericFunctions
     	alt.dismiss();
     }
     
-    public void clickElement(WebElement element){
+    public void clickElement(WebDriver driver, WebElement element)
+    {
     	element.click();
+    	System.out.println("User has clicked on the application");
     	
     }
     
