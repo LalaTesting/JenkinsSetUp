@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="15.740">
+           time="15.771">
   <properties />
   
   
-            <testcase name="clickedshowlink" time="9.371" classname="Voot.smac.pages.test.ShowPagesTest" />
-                <testcase name="clickedkidslink" time="6.369" classname="Voot.smac.pages.test.ShowPagesTest" />
+            <testcase name="clickedshowlink" time="9.477" classname="Voot.smac.pages.test.ShowPagesTest" />
+                <testcase name="clickedkidslink" time="6.294" classname="Voot.smac.pages.test.ShowPagesTest" />
       
 </testsuite>

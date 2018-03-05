@@ -8,12 +8,15 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.Reporter;
 
-public class HomaPage_Voot_Application {
+import Utilspackage.com.Uielements;
+
+public class HomaPage_Voot_Application  extends Uielements{
 
 	
 	
 	WebDriver driver;
-	By VootLogoXpath=By.xpath("//a[@class='voot-brand-logo']");
+	WebElement vootlogo, newShow,showdrop_down ,Kidsdrop_down ,channeldrop_down,Moviesdrop_down,
+	searchIcon,UserLoginIcon;
 	
 	public HomaPage_Voot_Application(WebDriver driver) {
 
@@ -22,10 +25,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean vootLogo() {
-		WebElement vootlogo = driver.findElement(VootLogoXpath);
-		
-
-
+	vootlogo = driver.findElement(By.xpath(appvootlogo));
 		if (vootlogo.isDisplayed()) {
 			highLighterMethod(driver, vootlogo);
 			System.out.println("voot logo is present and it is displaying in the portal");
@@ -36,7 +36,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifynewshow() {
-		WebElement newShow = driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/a"));
+     newShow = driver.findElement(By.xpath(newShowname));
 		highLighterMethod(driver, newShow);
 		String showName = newShow.getText();
 		System.out.println(showName);
@@ -49,7 +49,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifyshowsSectionmenu() {
-		WebElement showdrop_down = driver.findElement(By.id("shows_dropbtn"));
+		showdrop_down = driver.findElement(By.id(dropdownShow_id));
 		highLighterMethod(driver, showdrop_down);
 		String showsNameinshowmenu = showdrop_down.getText();
 		System.out.println(showsNameinshowmenu);
@@ -64,7 +64,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifykidsSectionmenu() {
-		WebElement Kidsdrop_down = driver.findElement(By.id("kids_dropbtn"));
+	Kidsdrop_down = driver.findElement(By.id("kids_dropbtn"));
 		highLighterMethod(driver, Kidsdrop_down);
 		String kidsName = Kidsdrop_down.getText();
 		System.out.println(kidsName);
@@ -77,7 +77,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifychannelSectionmenu() {
-		WebElement channeldrop_down = driver.findElement(By.id("channels_dropbtn"));
+		 channeldrop_down = driver.findElement(By.id("channels_dropbtn"));
 		highLighterMethod(driver, channeldrop_down);
 		String channelName = channeldrop_down.getText();
 		System.out.println(channelName);
@@ -90,7 +90,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifyMoviesSectionmenu() {
-		WebElement Moviesdrop_down = driver.findElement(By.id("movies_dropbtn"));
+	Moviesdrop_down = driver.findElement(By.id("movies_dropbtn"));
 		highLighterMethod(driver, Moviesdrop_down);
 		String MoviesName = Moviesdrop_down.getText();
 		System.out.println(MoviesName);
@@ -103,7 +103,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifySearch_icon_inHeadermenu() {
-		WebElement searchIcon = driver.findElement(By.className("VSearch"));
+	searchIcon = driver.findElement(By.className("VSearch"));
 		highLighterMethod(driver, searchIcon);
 		if (searchIcon.isDisplayed()) {
 			System.out.println(" Search icon is displaying in the portal");
@@ -114,7 +114,7 @@ public class HomaPage_Voot_Application {
 	}
 
 	public boolean verifyUserLogin_icon_in_Headermenu() {
-		WebElement UserLoginIcon = driver.findElement(By.className("user-login"));
+		UserLoginIcon = driver.findElement(By.className("user-login"));
 		highLighterMethod(driver, UserLoginIcon);
 		if (UserLoginIcon.isDisplayed()) {
 			System.out.println(" User login icon is displaying in the portal");

@@ -5,16 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
-public class VootLoginPage {
+import Utilspackage.com.ApplicationData;
+import Utilspackage.com.Uielements;
 
-
-	
+public class VootLoginPage  extends Uielements{
 	WebDriver driver;
-	
 	WebElement vootlogoele,verfimessage ;
-	
+	ApplicationData appdata=new ApplicationData();
 
-	
 	public VootLoginPage(WebDriver driver )
 	{
 		this .driver=driver ;
@@ -23,7 +21,7 @@ public class VootLoginPage {
 	
 	public boolean vootLogopreaset() throws InterruptedException
 	{
-		vootlogoele=driver.findElement(By.xpath("//span[@class='user-login']"));
+		vootlogoele=driver.findElement(By.xpath(vootApplicationlogoxpath));
 		if(vootlogoele.isDisplayed())
 		{
 			Reporter.log("Voot logo is diaplsying on the home page screen and it is  clickable");
@@ -39,11 +37,10 @@ public class VootLoginPage {
 	
 	public boolean verifyUseEmailMessage()
 	{
-		verfimessage =driver.findElement(By.xpath("//span[@class='use-your-eamil-address']"));
+		verfimessage =driver.findElement(By.xpath(EmailTextmessage));
         String Actualmessage=verfimessage.getText();
-        String expectdmessage="USE YOUR EMAIL ADDRESS";
         
-		if(Actualmessage.equals(expectdmessage))
+		if(Actualmessage.equals(appdata.verifyloginpageInformationMessage))
 		{
 			Reporter.log("This is the message getting from system "+Actualmessage );
 			return true;
