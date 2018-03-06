@@ -12,7 +12,7 @@ import Utilspackage.com.Uielements;
 
 public class VootLoginPage extends Uielements {
 	WebDriver driver;
-	WebElement vootlogoele, verfimessage, inputEmail, registerbutton,loginbutton,OrTextmessage,loginwith,facebookbutton,googlebutton;
+	WebElement vootlogoele, verfimessage, inputEmail, registerbutton,loginbutton,OrTextmessage,loginwith,facebookbutton,googlebutton,errormessage,closebutton;
 	ApplicationData appdata = new ApplicationData();
 	GenericFunctions functions=new GenericFunctions(driver);
 
@@ -46,21 +46,30 @@ public class VootLoginPage extends Uielements {
 			return false;
 	}
 
-	public boolean verifyEmailAddressInputField(String EmailId) {
+	public boolean verifyEmailAddressInputField() {
 
 		inputEmail = driver.findElement(By.xpath(EmailField_xpath));
 		functions.highLighterMethod(driver, inputEmail);
 		if (inputEmail.isDisplayed()) {
 			System.out.println("Email input Text field is displaying on the login popup");
-			inputEmail.sendKeys(EmailId);
-			System.out.println("User has given Email is:::::::::::::::" + EmailId);
-			
-		
 			return true;
 		} else
 			return false;
 	}
 
+	public boolean enter_Emailid_Address_in_InputField(String EmailId) {
+
+		inputEmail = driver.findElement(By.xpath(EmailField_xpath));
+		functions.highLighterMethod(driver, inputEmail);
+		if (inputEmail.isDisplayed()) {
+			inputEmail.sendKeys(EmailId);
+			System.out.println("User has given Email is:::::::::::::::" + EmailId);
+			return true;
+		} else
+			return false;
+	}
+
+	
 	public boolean verifyRegesterButtonOnLoginPage() {
 		registerbutton = driver.findElement(By.xpath(rigisterButton_xpath));
 		functions.highLighterMethod(driver, registerbutton);
@@ -135,4 +144,35 @@ public class VootLoginPage extends Uielements {
 			return true;
 		} else
 			return false;
-	}}
+	}
+	
+	public boolean closeIcon() throws InterruptedException {
+		closebutton = driver.findElement(By.xpath(closebuttonxpath));
+	
+		functions.highLighterMethod(driver, closebutton);
+		functions.sleepMode(2000);
+		if (closebutton.isDisplayed()) {
+			functions.sleepMode(5000);
+			System.out.println("close icon  is displaying on the login page ");
+			closebutton.click();
+			functions.sleepMode(2000);
+			return true;
+		} else
+			return false;
+	}
+	
+    public void verify_Error_message_without_EnteringEmail() throws InterruptedException
+    {
+    	vootLogopreaset();
+    	inputEmail.sendKeys();
+    	registerbutton.click();
+    	errormessage=driver.findElement(By.xpath(emailErrormessage));
+    	String errorTextValue=errormessage.getText();
+    	functions.highLighterMethod(driver, errormessage);
+    	System.out.println("verify error message :::::::::::::"+errorTextValue);
+    	functions.sleepMode(1000);
+    	Assert.assertEquals(errorTextValue, appdata.errorMessage);
+    	
+    }
+
+}

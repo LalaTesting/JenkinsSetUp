@@ -26,16 +26,10 @@
       <![CDATA[User login logo is displaying and it is clickable in the portal]]>
     </line>
     <line>
-      <![CDATA[show link is present in home page]]>
-    </line>
-    <line>
-      <![CDATA[Voot logo is diaplsying on the home page screen and it is  clickable]]>
-    </line>
-    <line>
-      <![CDATA[This is the message getting from system USE YOUR EMAIL ADDRESS]]>
+      <![CDATA[Ad Banner is displaying on the home page screen]]>
     </line>
   </reporter-output>
-  <suite name="Parallel test suite" duration-ms="80353" started-at="2018-03-05T13:03:06Z" finished-at="2018-03-05T13:04:26Z">
+  <suite name="Parallel test suite" duration-ms="39467" started-at="2018-03-06T13:50:28Z" finished-at="2018-03-06T13:51:07Z">
     <groups>
       <group name="Verification of Header Menu">
         <method signature="HomePageTest.verifyChannelsmenuinHomepage()[pri:5, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyChannelsmenuinHomepage" class="Voot.smac.pages.test.HomePageTest"/>
@@ -48,9 +42,9 @@
         <method signature="HomePageTest.verifyuserloginiconinHomepage()[pri:8, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyuserloginiconinHomepage" class="Voot.smac.pages.test.HomePageTest"/>
       </group> <!-- Verification of Header Menu -->
     </groups>
-    <test name="Verification of Home page of voot application in chrome browser" duration-ms="15723" started-at="2018-03-05T13:03:06Z" finished-at="2018-03-05T13:03:22Z">
+    <test name="Verification of Home page of voot application in chrome    browser" duration-ms="39467" started-at="2018-03-06T13:50:28Z" finished-at="2018-03-06T13:51:07Z">
       <class name="Voot.smac.pages.test.HomePageTest">
-        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="setBrowsers" is-config="true" duration-ms="11488" started-at="2018-03-05T18:33:06Z" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="setBrowsers" is-config="true" duration-ms="11386" started-at="2018-03-06T19:20:28Z" finished-at="2018-03-06T19:20:39Z">
           <params>
             <param index="0">
               <value>
@@ -61,126 +55,82 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowsers -->
-        <test-method status="PASS" signature="verifyVootLogoinHomePage()[pri:1, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyVootLogoinHomePage" duration-ms="231" started-at="2018-03-05T18:33:18Z" description="verify weather vootlogo is present in headerSection or not" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="verifyVootLogoinHomePage()[pri:1, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyVootLogoinHomePage" duration-ms="217" started-at="2018-03-06T19:20:39Z" description="verify weather vootlogo is present in headerSection or not" finished-at="2018-03-06T19:20:40Z">
           <reporter-output>
             <line>
               <![CDATA[voot logo is present and it is displaying in the portal]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyVootLogoinHomePage -->
-        <test-method status="PASS" signature="verifynewshowLinkinHomePage()[pri:2, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifynewshowLinkinHomePage" duration-ms="299" started-at="2018-03-05T18:33:18Z" description="verify weather Newshowlink is present in headerSection or not" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="verifynewshowLinkinHomePage()[pri:2, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifynewshowLinkinHomePage" duration-ms="275" started-at="2018-03-06T19:20:40Z" description="verify weather Newshowlink is present in headerSection or not" finished-at="2018-03-06T19:20:40Z">
           <reporter-output>
             <line>
               <![CDATA[showName and it is displaying & SHOWS is clickable in the portal]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifynewshowLinkinHomePage -->
-        <test-method status="PASS" signature="verifyshowsmenuinHomepage()[pri:3, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyshowsmenuinHomepage" duration-ms="58" started-at="2018-03-05T18:33:18Z" description="verify weather showslink is present in headerSectionor not" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="verifyshowsmenuinHomepage()[pri:3, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyshowsmenuinHomepage" duration-ms="62" started-at="2018-03-06T19:20:40Z" description="verify weather showslink is present in headerSectionor not" finished-at="2018-03-06T19:20:40Z">
           <reporter-output>
             <line>
               <![CDATA[showsNameinshowmenu showsNameinshowmenu it is displaying & clickable in the portal]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyshowsmenuinHomepage -->
-        <test-method status="PASS" signature="verifykidsmenuinHomepage()[pri:4, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifykidsmenuinHomepage" duration-ms="73" started-at="2018-03-05T18:33:18Z" description="verify weather Kidslink is present in headerSection or not" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="verifykidsmenuinHomepage()[pri:4, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifykidsmenuinHomepage" duration-ms="69" started-at="2018-03-06T19:20:40Z" description="verify weather Kidslink is present in headerSection or not" finished-at="2018-03-06T19:20:40Z">
           <reporter-output>
             <line>
               <![CDATA[kids link is displaying and it is clickable in the portal]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifykidsmenuinHomepage -->
-        <test-method status="PASS" signature="verifyChannelsmenuinHomepage()[pri:5, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyChannelsmenuinHomepage" duration-ms="68" started-at="2018-03-05T18:33:18Z" description="verify weather channelslink is present in headersectonor not" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="verifyChannelsmenuinHomepage()[pri:5, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyChannelsmenuinHomepage" duration-ms="72" started-at="2018-03-06T19:20:40Z" description="verify weather channelslink is present in headersectonor not" finished-at="2018-03-06T19:20:40Z">
           <reporter-output>
             <line>
               <![CDATA[channls link is displaying and it is clickable in the portal]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyChannelsmenuinHomepage -->
-        <test-method status="PASS" signature="verifyMoviesmenuinHomepage()[pri:6, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyMoviesmenuinHomepage" duration-ms="74" started-at="2018-03-05T18:33:18Z" description="verify weather MoviesMenu is present in headerSection or not" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="verifyMoviesmenuinHomepage()[pri:6, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyMoviesmenuinHomepage" duration-ms="67" started-at="2018-03-06T19:20:40Z" description="verify weather MoviesMenu is present in headerSection or not" finished-at="2018-03-06T19:20:40Z">
           <reporter-output>
             <line>
               <![CDATA[Movies link is displaying and it is clickable in the portal]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyMoviesmenuinHomepage -->
-        <test-method status="PASS" signature="verifySearchinHomepage()[pri:7, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifySearchinHomepage" duration-ms="46" started-at="2018-03-05T18:33:18Z" description="verify weather Search icon is present in headerSection or not" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="verifySearchinHomepage()[pri:7, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifySearchinHomepage" duration-ms="49" started-at="2018-03-06T19:20:40Z" description="verify weather Search icon is present in headerSection or not" finished-at="2018-03-06T19:20:40Z">
           <reporter-output>
             <line>
               <![CDATA[Search icon is displaying and it is clickable in the portal]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifySearchinHomepage -->
-        <test-method status="PASS" signature="verifyuserloginiconinHomepage()[pri:8, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyuserloginiconinHomepage" duration-ms="53" started-at="2018-03-05T18:33:18Z" description="verify weather User_Login_Icon is present in headerSection or not" finished-at="2018-03-05T18:33:18Z">
+        <test-method status="PASS" signature="verifyuserloginiconinHomepage()[pri:8, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyuserloginiconinHomepage" duration-ms="1071" started-at="2018-03-06T19:20:40Z" description="verify weather User_Login_Icon is present in headerSection or not" finished-at="2018-03-06T19:20:41Z">
           <reporter-output>
             <line>
               <![CDATA[User login logo is displaying and it is clickable in the portal]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyuserloginiconinHomepage -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="closebrowser" is-config="true" duration-ms="3293" started-at="2018-03-05T18:33:18Z" finished-at="2018-03-05T18:33:22Z">
+        <test-method status="PASS" signature="clickOnTheNextButtonOnCoursoual()[pri:9, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="clickOnTheNextButtonOnCoursoual" duration-ms="20544" started-at="2018-03-06T19:20:41Z" description="verify weather User is able to click on the the next courasual forword button" finished-at="2018-03-06T19:21:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnTheNextButtonOnCoursoual -->
+        <test-method status="PASS" signature="verifyAddBannerSectionl()[pri:10, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="verifyAddBannerSectionl" duration-ms="2089" started-at="2018-03-06T19:21:02Z" description="verify weather User is able to click on the the next courasual forword button" finished-at="2018-03-06T19:21:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Ad Banner is displaying on the home page screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAddBannerSectionl -->
+        <test-method status="PASS" signature="clickOnThePreviousButtonOnCoursoual()[pri:11, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="clickOnThePreviousButtonOnCoursoual" duration-ms="106" started-at="2018-03-06T19:21:04Z" description="verify weather User is able to click on the the Previous button on  courasual " finished-at="2018-03-06T19:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnThePreviousButtonOnCoursoual -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:Voot.smac.pages.test.HomePageTest@5a8806ef]" name="closebrowser" is-config="true" duration-ms="3414" started-at="2018-03-06T19:21:04Z" finished-at="2018-03-06T19:21:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
       </class> <!-- Voot.smac.pages.test.HomePageTest -->
-    </test> <!-- Verification of Home page of voot application in chrome browser -->
-    <test name="Verification of Show page of voot application in chrome browser" duration-ms="34896" started-at="2018-03-05T13:03:22Z" finished-at="2018-03-05T13:03:57Z">
-      <class name="Voot.smac.pages.test.ShowPagesTest">
-        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.ShowPagesTest@27a5f880]" name="setBrowsers" is-config="true" duration-ms="10175" started-at="2018-03-05T18:33:22Z" finished-at="2018-03-05T18:33:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowsers -->
-        <test-method status="PASS" signature="clickedshowlink()[pri:1, instance:Voot.smac.pages.test.ShowPagesTest@27a5f880]" name="clickedshowlink" duration-ms="15051" started-at="2018-03-05T18:33:32Z" description="Verify weather user is able to click on the show link on the header or not if yes verify all the show name in side the show menu" finished-at="2018-03-05T18:33:47Z">
-          <reporter-output>
-            <line>
-              <![CDATA[show link is present in home page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- clickedshowlink -->
-        <test-method status="PASS" signature="clickedkidslink()[pri:2, instance:Voot.smac.pages.test.ShowPagesTest@27a5f880]" name="clickedkidslink" duration-ms="8310" started-at="2018-03-05T18:33:47Z" description="Verify weather user is able to click on the kids link on the header" finished-at="2018-03-05T18:33:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickedkidslink -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:Voot.smac.pages.test.ShowPagesTest@27a5f880]" name="closebrowser" is-config="true" duration-ms="1348" started-at="2018-03-05T18:33:55Z" finished-at="2018-03-05T18:33:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
-    </test> <!-- Verification of Show page of voot application in chrome browser -->
-    <test name="Verification of vot login page of voot application in chrome browser" duration-ms="29690" started-at="2018-03-05T13:03:57Z" finished-at="2018-03-05T13:04:26Z">
-      <class name="Voot.smac.pages.test.VootLoginPageTest">
-        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.VootLoginPageTest@1786dec2]" name="setBrowsers" is-config="true" duration-ms="11259" started-at="2018-03-05T18:33:57Z" finished-at="2018-03-05T18:34:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowsers -->
-        <test-method status="PASS" signature="verifyLoginScreeen()[pri:0, instance:Voot.smac.pages.test.VootLoginPageTest@1786dec2]" name="verifyLoginScreeen" duration-ms="15465" started-at="2018-03-05T18:34:08Z" finished-at="2018-03-05T18:34:23Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Voot logo is diaplsying on the home page screen and it is  clickable]]>
-            </line>
-            <line>
-              <![CDATA[This is the message getting from system USE YOUR EMAIL ADDRESS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyLoginScreeen -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:Voot.smac.pages.test.VootLoginPageTest@1786dec2]" name="closebrowser" is-config="true" duration-ms="2963" started-at="2018-03-05T18:34:23Z" finished-at="2018-03-05T18:34:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closebrowser -->
-      </class> <!-- Voot.smac.pages.test.VootLoginPageTest -->
-    </test> <!-- Verification of vot login page of voot application in chrome browser -->
+    </test> <!-- Verification of Home page of voot application in chrome    browser -->
   </suite> <!-- Parallel test suite -->
 </testng-results>

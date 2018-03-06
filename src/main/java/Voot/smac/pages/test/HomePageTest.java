@@ -41,8 +41,20 @@ public class HomePageTest extends BaseClass {
 	}
 
 	@Test(priority = 8, groups = "Verification of Header Menu", description = "verify weather User_Login_Icon is present in headerSection or not")
-	public void verifyuserloginiconinHomepage() {
+	public void verifyuserloginiconinHomepage() throws InterruptedException {
 		homepage.verifyUserLogin_icon_in_Headermenu();
 
+	}
+	@Test(priority = 9, description = "verify weather User is able to click on the the next courasual forword button")
+	public void clickOnTheNextButtonOnCoursoual() throws InterruptedException {
+		homepage.clickdotsincoural();
+	}
+	@Test(priority = 10, description = "verify weather User is able to click on the the next courasual forword button")
+	public void verifyAddBannerSectionl() throws InterruptedException {
+		homepage.verify_adbanner_in_homepge_body();
+	}
+	@Test(priority = 11, description = "verify weather User is able to click on the the Previous button on  courasual ")
+	public void clickOnThePreviousButtonOnCoursoual() throws InterruptedException {
+		homepage.clickonbackButtonOnCarosual();
 	}
 }

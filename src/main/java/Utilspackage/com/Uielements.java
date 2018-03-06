@@ -6,6 +6,11 @@ public class Uielements
 	public static String appvootlogo ="//a[@class='voot-brand-logo']";
 	public static String newShowname="//header/div[1]/div[1]/div[1]/div[2]/a";
 	public static String dropdownShow_id="shows_dropbtn";
+	public static String BackButtononcarousal="//button[text()='Previous']";
+	public static String foarwordButtoncarausal="//button[text()='Next']";
+	public static String dotsxpathincarosual="//ul[@class='slick-dots']/li";
+	public static String adbannerxpath="//div[@class='adbannerWrapper']";
+	
 	public static String More_button_mostwatchshow_xpath="//a[@href='/listing/shows-1/?&cId=333478&trayLayout=showsPoster&moduleType=mediaLargeWtLbl&rowId=1623']";
 	
 
@@ -22,6 +27,11 @@ public class Uielements
 	public static String loginwith_Xpath="//div[@class='login-with']";
 	public static String  loginwithfacebookbutton_xpath="//div[@class='FacebookBtn']";
 	public static String loginwithgoolebutton_xpath="//div[@class='GoogleBtn']";
+	public static String closebuttonxpath="html/body/div[1]/div/div/div/div[1]/header/div[2]/div/button";
+	
+	//supply the data in email text field
+	public static String emailErrormessage="//div[@class='errorMsgForMainPopFromServer']";
+	
 	
 	
 
