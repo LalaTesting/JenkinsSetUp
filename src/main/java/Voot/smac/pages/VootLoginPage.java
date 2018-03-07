@@ -23,8 +23,9 @@ public class VootLoginPage extends Uielements {
 	public boolean vootLogopreaset() throws InterruptedException {
 		vootlogoele = driver.findElement(By.xpath(vootApplicationlogoxpath));
 		functions.highLighterMethod(driver, vootlogoele);
+		System.out.println("When user click on 'Profile Avatar',login popup should be displayed.");
 		if (vootlogoele.isDisplayed()) {
-			Reporter.log("Voot logo is diaplsying on the home page screen and it is  clickable");
+			Reporter.log("user click on 'Profile Avatar',login popup is displaying.");
 			vootlogoele.click();
 			Thread.sleep(1000);
 			return true;

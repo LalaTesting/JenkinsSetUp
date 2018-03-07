@@ -9,7 +9,7 @@ public class VootLoginPageTest  extends BaseClass
 {
 TestData data=new TestData();
 	
-	@Test(priority=1,description="Verification of Login PopUp in Voot Application")
+	@Test(priority=1,description="Verify  whether login popup is displayed when user click on profile avatar in Homepage before logging in to application.")
 	public void verifyLoginScreeen() throws InterruptedException{
 		Assert.assertTrue(loginpage.vootLogopreaset());
 		Assert.assertTrue(loginpage.verifyUseEmailMessage());

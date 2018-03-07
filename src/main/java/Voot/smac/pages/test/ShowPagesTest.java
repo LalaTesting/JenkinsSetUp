@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class ShowPagesTest extends BaseClass {
 
-	@Test(priority = 1, description = "Verify weather user is able to click on the show link on the header or not if yes verify all the show name in side the show mouse hover menu ")
+	@Test(priority = 1, description = "TC_HMP_004 :- Verify list overlay is displayed when user mousehover on 'Shows' in the header menu of  'Homepage'. ")
 	public void clickedshowlink() throws InterruptedException {
 		Assert.assertTrue(showpage.clickShowsLinkinheader());
 

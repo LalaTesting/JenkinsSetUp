@@ -20,9 +20,8 @@ public class BaseClass {
 	public ShowsPages showpage;
 	public VootLoginPage loginpage;
 	public GenericFunctions functios;
-	
 
-	// Just  i am adding authour in our code
+	// Just i am adding authour in our code
 
 	@Parameters({ "browsers" })
 	@BeforeClass
@@ -45,21 +44,20 @@ public class BaseClass {
 					"F:\\chromedriver_win32 (1)\\chromedriver_win32 (1)\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-		
-	
+
 		driver.get("https://alpha.voot.com/");
-		System.out.println("user has Entered the Application URL");
+		System.out.println("Open the browser,enter the URL,press 'Enter' and navigate to Homepage.");
 		driver.manage().window().maximize();
 		System.out.println("user has maximize the browser");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		homepage = new HomaPage_Voot_Application(driver);
-		
-		showpage=new ShowsPages(driver);
-		
-		loginpage=new VootLoginPage(driver);
-		
-		functios=new GenericFunctions (driver);
+
+		showpage = new ShowsPages(driver);
+
+		loginpage = new VootLoginPage(driver);
+
+		functios = new GenericFunctions(driver);
 	}
 
 	@AfterClass
@@ -68,4 +66,3 @@ public class BaseClass {
 		driver.quit();
 	}
 }
-

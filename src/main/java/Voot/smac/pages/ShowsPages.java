@@ -33,7 +33,7 @@ public class ShowsPages extends Uielements {
 		functios.highLighterMethod(driver, showlink);
 
 		if (showlink.isDisplayed()) {
-			System.out.println("show link is present in the homegage");
+			System.out.println("Mouse hover on 'Shows' in the header and verify");
 			Reporter.log("show link is present in home page");
 			String sholink = showlink.getAttribute("href");
 			System.out.println("show link is :::::" + sholink);

@@ -38,7 +38,7 @@ public class HomaPage_Voot_Application extends Uielements {
 	}
 
 	public boolean verifynewshow() throws InterruptedException {
-		newShow = driver.findElement(By.xpath(newShowname));
+		newShow = driver.findElement(By.id(newShowname));
 		function.highLighterMethod(driver, newShow);
 		String showName = newShow.getText();
 		System.out.println(showName);
@@ -80,6 +80,7 @@ public class HomaPage_Voot_Application extends Uielements {
 
 	public boolean verifychannelSectionmenu() throws InterruptedException {
 		channeldrop_down = driver.findElement(By.id("channels_dropbtn"));
+		System.out.println("Verify list overlay is displayed when user mousehover on 'Channels' in the header menu of  'Homepage'.");
 		function.highLighterMethod(driver, channeldrop_down);
 		String channelName = channeldrop_down.getText();
 		System.out.println(channelName);
@@ -94,6 +95,7 @@ public class HomaPage_Voot_Application extends Uielements {
 	public boolean verifyMoviesSectionmenu() throws InterruptedException {
 		Moviesdrop_down = driver.findElement(By.id("movies_dropbtn"));
 		function.highLighterMethod(driver, Moviesdrop_down);
+		System.out.println("Verify list overlay is displayed when user mousehover on 'Movies' in the header menu of  'Homepage'.");
 		String MoviesName = Moviesdrop_down.getText();
 		System.out.println(MoviesName);
 		if (Moviesdrop_down.isDisplayed()) {
@@ -140,18 +142,6 @@ function.highLighterMethod(driver, NextButton);
 		} else
 			return false;
 	}
-
-	public void clickdotsincoural() throws InterruptedException {
-		List<WebElement> dotbutton = driver.findElements(By.xpath(dotsxpathincarosual));
-		int countsdots = dotbutton.size();
-		System.out.println("carosual dots size is " + countsdots);
-		for (int i = 0; i < countsdots; i++) {
-			clickonNextButtonOnCarosual();
-			//System.out.println("Next button is clicking");
-			function.sleepMode(2000);
-		}
-	}
-
 	public boolean verify_adbanner_in_homepge_body() throws InterruptedException {
 		adbanner_body = driver.findElement(By.xpath(adbannerxpath));
 		function.highLighterMethod(driver, adbanner_body);
@@ -169,7 +159,33 @@ function.highLighterMethod(driver, NextButton);
 		} else
 			return false;
 	}
+	/*public boolean clickOnthumbnailinthemasterheadcorousel () throws InterruptedException {
+		 = driver.findElement(By.xpath(adbannerxpath));
+		function.highLighterMethod(driver, adbanner_body);
+		Reporter.log("Ad banner has been  Highlighted");
+		function.sleepMode(2000);
+		function.scroll_top_to_bottom(driver);
+		function.sleepMode(2000);
 
+		if (adbanner_body.isDisplayed()) {
+			System.out.println(" Ad Banner is displaying on the home page screen");
+			Reporter.log("Ad Banner is displaying on the home page screen");
+			function.scrollDownFromTopOfPage(driver);
+			function.sleepMode(2000);
+			return true;
+		} else
+			return false;
+	}*/
+	public void clickdotsincoural() throws InterruptedException {
+		List<WebElement> dotbutton = driver.findElements(By.xpath(dotsxpathincarosual));
+		int countsdots = dotbutton.size();
+		System.out.println("Verify 'Pagination markers' and count of them." + countsdots);
+		for (int i = 0; i < countsdots; i++) {
+			clickonNextButtonOnCarosual();
+			System.out.println("Next button is clicking");
+			function.sleepMode(2000);
+		}
+	}
 	public boolean clickonbackButtonOnCarosual() throws InterruptedException {
 		backButton = driver.findElement(By.xpath(BackButtononcarousal));
 		function.highLighterMethod(driver, backButton);

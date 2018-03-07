@@ -4,7 +4,7 @@ public class Uielements
 {
  //HomePage elemens
 	public static String appvootlogo ="//a[@class='voot-brand-logo']";
-	public static String newShowname="//header/div[1]/div[1]/div[1]/div[2]/a";
+	public static String newShowname="risingStarS02_dropbtn";
 	public static String dropdownShow_id="shows_dropbtn";
 	public static String BackButtononcarousal="//button[text()='Previous']";
 	public static String foarwordButtoncarausal="//button[text()='Next']";

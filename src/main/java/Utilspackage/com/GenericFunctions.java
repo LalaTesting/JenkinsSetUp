@@ -36,14 +36,16 @@ public class GenericFunctions {
 	public void scrollDown(WebDriver driver) throws InterruptedException {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		System.out.println("user are scrolling the application");
-		for (int i = 0; i < 5; i++)
+		System.out.println("user are scrolling the page of application");
+		for (int i = 0; ; i++)
+			if(i>=4)
+				break;
 			js.executeScript("javascript:window.scrollBy(0,200)");
 	
 		{
-			for (int j = 0; j < 5; j++)
+			/*for (int j = 0; j < 5; j++)
 				js.executeScript("javascript:window.scrollBy(0,-200)");
-			Thread.sleep(3000);
+			Thread.sleep(3000);*/
 		}
 		/*
 		 * JavascriptExecutor js=(JavascriptExecutor)driver;
