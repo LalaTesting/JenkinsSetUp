@@ -26,7 +26,7 @@ public class HomaPage_Voot_Application extends Uielements {
 
 	}
 
-	public boolean vootLogo() {
+	public boolean vootLogo() throws InterruptedException {
 		vootlogo = driver.findElement(By.xpath(appvootlogo));
 		if (vootlogo.isDisplayed()) {
 			function.highLighterMethod(driver, vootlogo);
@@ -37,7 +37,7 @@ public class HomaPage_Voot_Application extends Uielements {
 			return false;
 	}
 
-	public boolean verifynewshow() {
+	public boolean verifynewshow() throws InterruptedException {
 		newShow = driver.findElement(By.xpath(newShowname));
 		function.highLighterMethod(driver, newShow);
 		String showName = newShow.getText();
@@ -50,7 +50,7 @@ public class HomaPage_Voot_Application extends Uielements {
 			return false;
 	}
 
-	public boolean verifyshowsSectionmenu() {
+	public boolean verifyshowsSectionmenu() throws InterruptedException {
 		showdrop_down = driver.findElement(By.id(dropdownShow_id));
 		function.highLighterMethod(driver, showdrop_down);
 		String showsNameinshowmenu = showdrop_down.getText();
@@ -65,7 +65,7 @@ public class HomaPage_Voot_Application extends Uielements {
 			return false;
 	}
 
-	public boolean verifykidsSectionmenu() {
+	public boolean verifykidsSectionmenu() throws InterruptedException {
 		Kidsdrop_down = driver.findElement(By.id("kids_dropbtn"));
 		function.highLighterMethod(driver, Kidsdrop_down);
 		String kidsName = Kidsdrop_down.getText();
@@ -78,7 +78,7 @@ public class HomaPage_Voot_Application extends Uielements {
 			return false;
 	}
 
-	public boolean verifychannelSectionmenu() {
+	public boolean verifychannelSectionmenu() throws InterruptedException {
 		channeldrop_down = driver.findElement(By.id("channels_dropbtn"));
 		function.highLighterMethod(driver, channeldrop_down);
 		String channelName = channeldrop_down.getText();
@@ -91,7 +91,7 @@ public class HomaPage_Voot_Application extends Uielements {
 			return false;
 	}
 
-	public boolean verifyMoviesSectionmenu() {
+	public boolean verifyMoviesSectionmenu() throws InterruptedException {
 		Moviesdrop_down = driver.findElement(By.id("movies_dropbtn"));
 		function.highLighterMethod(driver, Moviesdrop_down);
 		String MoviesName = Moviesdrop_down.getText();
@@ -104,7 +104,7 @@ public class HomaPage_Voot_Application extends Uielements {
 			return false;
 	}
 
-	public boolean verifySearch_icon_inHeadermenu() {
+	public boolean verifySearch_icon_inHeadermenu() throws InterruptedException {
 		searchIcon = driver.findElement(By.className("VSearch"));
 		function.highLighterMethod(driver, searchIcon);
 		if (searchIcon.isDisplayed()) {
@@ -147,7 +147,7 @@ function.highLighterMethod(driver, NextButton);
 		System.out.println("carosual dots size is " + countsdots);
 		for (int i = 0; i < countsdots; i++) {
 			clickonNextButtonOnCarosual();
-			System.out.println("Next button is clicking");
+			//System.out.println("Next button is clicking");
 			function.sleepMode(2000);
 		}
 	}
@@ -155,20 +155,30 @@ function.highLighterMethod(driver, NextButton);
 	public boolean verify_adbanner_in_homepge_body() throws InterruptedException {
 		adbanner_body = driver.findElement(By.xpath(adbannerxpath));
 		function.highLighterMethod(driver, adbanner_body);
+		Reporter.log("Ad banner has been  Highlighted");
 		function.sleepMode(2000);
+		function.scroll_top_to_bottom(driver);
+		function.sleepMode(2000);
+
 		if (adbanner_body.isDisplayed()) {
 			System.out.println(" Ad Banner is displaying on the home page screen");
 			Reporter.log("Ad Banner is displaying on the home page screen");
+			function.scrollDownFromTopOfPage(driver);
+			function.sleepMode(2000);
 			return true;
 		} else
 			return false;
 	}
 
-	public boolean clickonbackButtonOnCarosual() {
+	public boolean clickonbackButtonOnCarosual() throws InterruptedException {
 		backButton = driver.findElement(By.xpath(BackButtononcarousal));
 		function.highLighterMethod(driver, backButton);
+		Reporter.log("Back button is  Highlighted");
+		function.sleepMode(2000);
 		if (backButton.isDisplayed()) {
+			for(int i=0;i<=4;i++)
 			backButton.click();
+			//function.sleepMode(2000);
 			return true;
 		} else
 			return false;

@@ -10,8 +10,19 @@
     <classes>
       <class name="Voot.smac.pages.test.HomePageTest">
         <methods>
+          <include name="verifySearchinHomepage"/>
           <include name="setBrowsers"/>
+          <include name="verifyMoviesmenuinHomepage"/>
+          <include name="verifyshowsmenuinHomepage"/>
+          <include name="verifyuserloginiconinHomepage"/>
+          <include name="verifyChannelsmenuinHomepage"/>
+          <include name="clickOnThePreviousButtonOnCoursoual"/>
+          <include name="verifynewshowLinkinHomePage"/>
+          <include name="verifyAddBannerSectionl"/>
+          <include name="closebrowser"/>
+          <include name="verifykidsmenuinHomepage"/>
           <include name="clickOnTheNextButtonOnCoursoual"/>
+          <include name="verifyVootLogoinHomePage"/>
         </methods>
       </class> <!-- Voot.smac.pages.test.HomePageTest -->
     </classes>

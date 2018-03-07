@@ -91,12 +91,34 @@ public class GenericFunctions {
 
 	}
 
-	public void highLighterMethod(WebDriver driver, WebElement element) {
+	public void highLighterMethod(WebDriver driver, WebElement element) throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
+		for (int i = 0; i < 1; i++) {
+			 js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "color: yellow; border: 2px solid yellow;");
+			Thread.sleep(100);
+
+		}
 	}
 
-	public void scroll_top_to_bottom() {
+	public void scroll_top_to_bottom(WebDriver driver ) throws InterruptedException {
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		for (int second = 0; ; second++) {
+		        if(second >=25){
+		            break;
+		        }
+		            jse.executeScript("window.scrollBy(0,600)", ""); //y value '800' can be altered
+		            Thread.sleep(2000);
+		}
 
 	}
-}
+public void scrollDownFromTopOfPage(WebDriver driver) throws InterruptedException {
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	for (int second = 0; ; second++) {
+        if(second >=25){
+            break;
+        }
+	js.executeScript("window.scrollBy(0, -600)" ,"");
+	 Thread.sleep(2000);
+		
+	}
+}}

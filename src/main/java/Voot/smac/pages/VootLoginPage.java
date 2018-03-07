@@ -33,7 +33,7 @@ public class VootLoginPage extends Uielements {
 		}
 	}
 
-	public boolean verifyUseEmailMessage() {
+	public boolean verifyUseEmailMessage() throws InterruptedException {
 		verfimessage = driver.findElement(By.xpath(EmailTextmessage));
 		functions.highLighterMethod(driver, verfimessage);
 		String Actualmessage = verfimessage.getText();
@@ -46,7 +46,7 @@ public class VootLoginPage extends Uielements {
 			return false;
 	}
 
-	public boolean verifyEmailAddressInputField() {
+	public boolean verifyEmailAddressInputField() throws InterruptedException {
 
 		inputEmail = driver.findElement(By.xpath(EmailField_xpath));
 		functions.highLighterMethod(driver, inputEmail);
@@ -57,7 +57,7 @@ public class VootLoginPage extends Uielements {
 			return false;
 	}
 
-	public boolean enter_Emailid_Address_in_InputField(String EmailId) {
+	public boolean enter_Emailid_Address_in_InputField(String EmailId) throws InterruptedException {
 
 		inputEmail = driver.findElement(By.xpath(EmailField_xpath));
 		functions.highLighterMethod(driver, inputEmail);
@@ -70,7 +70,7 @@ public class VootLoginPage extends Uielements {
 	}
 
 	
-	public boolean verifyRegesterButtonOnLoginPage() {
+	public boolean verifyRegesterButtonOnLoginPage() throws InterruptedException {
 		registerbutton = driver.findElement(By.xpath(rigisterButton_xpath));
 		functions.highLighterMethod(driver, registerbutton);
 		String registertextvalue = registerbutton.getText();

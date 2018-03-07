@@ -32,7 +32,7 @@ TestData data=new TestData();
 	
 	
 	@Test(priority=3,description="verify valid email id in Login PopUp in Voot Application")
-	public void enter_valid_Email_In_input_Text_field(){
+	public void enter_valid_Email_In_input_Text_field() throws InterruptedException{
 		Assert.assertTrue(loginpage.enter_Emailid_Address_in_InputField(data.validemailId));;
 	}
 }
