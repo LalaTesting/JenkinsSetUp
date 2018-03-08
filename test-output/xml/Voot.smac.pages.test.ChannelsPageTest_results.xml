@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verification of Channel page of voot application in chrome browser"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.259">
+  <properties />
+  
+  
+            <testcase name="mousehover_ChannelsInHeaderMenuOfHomepage" time="1.259" classname="Voot.smac.pages.test.ChannelsPageTest" />
+      
+</testsuite>

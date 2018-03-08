@@ -89,7 +89,7 @@ public class GenericFunctions {
 
 	public void mouseOverAction(WebDriver driver, WebElement element) {
 		Actions action = new Actions(driver);
-		action.moveToElement(element).click().build().perform();
+		action.moveToElement(element).build().perform();
 
 	}
 

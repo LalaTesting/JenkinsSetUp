@@ -10,7 +10,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import Utilspackage.com.GenericFunctions;
+import Voot.smac.pages.ClannelsPage;
 import Voot.smac.pages.HomaPage_Voot_Application;
+import Voot.smac.pages.MoviesPage;
 import Voot.smac.pages.ShowsPages;
 import Voot.smac.pages.VootLoginPage;
 
@@ -20,6 +22,8 @@ public class BaseClass {
 	public ShowsPages showpage;
 	public VootLoginPage loginpage;
 	public GenericFunctions functios;
+	public ClannelsPage channelpage;
+	public MoviesPage moviepage;
 
 	// Just i am adding authour in our code
 
@@ -58,6 +62,9 @@ public class BaseClass {
 		loginpage = new VootLoginPage(driver);
 
 		functios = new GenericFunctions(driver);
+		
+		channelpage=new ClannelsPage(driver);
+		moviepage=new MoviesPage(driver);
 	}
 
 	@AfterClass

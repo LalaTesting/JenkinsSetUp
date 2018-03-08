@@ -2,10 +2,21 @@ package Utilspackage.com;
 
 public class Uielements
 {
- //HomePage elemens
+	
+	//Homepage header menu elements
+	
 	public static String appvootlogo ="//a[@class='voot-brand-logo']";
 	public static String newShowname="risingStarS02_dropbtn";
 	public static String dropdownShow_id="shows_dropbtn";
+	
+	public static String Kids_xpath="";
+	public static String  channels_id="channels_dropbtn";
+	public static String channelsOverlay_xpath="//div[@id='Channels']";
+	public static String Movies_id="movies_dropbtn";
+	public static String Moviesoverlayid="Movies";
+	
+ //HomePage carausal playlist elemens
+
 	public static String BackButtononcarousal="//button[text()='Previous']";
 	public static String foarwordButtoncarausal="//button[text()='Next']";
 	public static String dotsxpathincarosual="//ul[@class='slick-dots']/li";
@@ -29,7 +40,7 @@ public class Uielements
 	public static String loginwithgoolebutton_xpath="//div[@class='GoogleBtn']";
 	public static String closebuttonxpath="html/body/div[1]/div/div/div/div[1]/header/div[2]/div/button";
 	
-	//supply the data in email text field
+	//Email field supply the data in email text field
 	public static String emailErrormessage="//div[@class='errorMsgForMainPopFromServer']";
 	
 	
