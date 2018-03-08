@@ -9,7 +9,7 @@ public class Uielements
 	public static String newShowname="risingStarS02_dropbtn";
 	public static String dropdownShow_id="shows_dropbtn";
 	
-	public static String Kids_xpath="";
+	public static String Kids_menu_id="kids_dropbtn";
 	public static String  channels_id="channels_dropbtn";
 	public static String channelsOverlay_xpath="//div[@id='Channels']";
 	public static String Movies_id="movies_dropbtn";

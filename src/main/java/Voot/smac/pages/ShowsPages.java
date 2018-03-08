@@ -92,11 +92,11 @@ public class ShowsPages extends Uielements {
 							"Verify after click on the show what is the title ::::::::::::::::::: " + actualshowtitle);
 					Assert.assertEquals(actualshowtitle, appdata.Show_title_is);
 
-					functios.scrollDown(driver);
-					most_watched_show = driver.findElement(By.xpath(More_button_mostwatchshow_xpath));
+					//functios.scrollDown(driver);
+				/*	most_watched_show = driver.findElement(By.xpath(More_button_mostwatchshow_xpath));
 					functios.explicitlyWaitCondition(driver, 20, most_watched_show);
 					functios.clickElement(driver, most_watched_show);
-					Thread.sleep(5000);
+					Thread.sleep(5000);*/
 
 				}
 			}
@@ -107,12 +107,10 @@ public class ShowsPages extends Uielements {
 	}
 
 	public boolean clickKidsMenuLinkinheader() throws InterruptedException {
-		kids = driver.findElement(By.xpath("//div[@class='dropdown']/a[@id='kids_dropbtn']"));
-
+		kids = driver.findElement(By.id(Kids_menu_id));
 		functios.highLighterMethod(driver, kids);
-
 		System.out.println(" Kids Text value in header sction is::::::::::::" + kids.getText());
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		if (kids.isDisplayed()) {
 			functios.clickElement(driver, kids);
 			functios.sleepMode(2000);

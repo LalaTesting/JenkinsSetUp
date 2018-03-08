@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.259">
+           time="1.052">
   <properties />
   
   
-            <testcase name="mousehover_ChannelsInHeaderMenuOfHomepage" time="1.259" classname="Voot.smac.pages.test.ChannelsPageTest" />
+            <testcase name="mousehover_ChannelsInHeaderMenuOfHomepage" time="1.052" classname="Voot.smac.pages.test.ChannelsPageTest" />
       
 </testsuite>

@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="28.303">
+           time="28.958">
   <properties />
   
   
-            <testcase name="enter_valid_Email_In_input_Text_field" time="0.564" classname="Voot.smac.pages.test.VootLoginPageTest" />
-                <testcase name="EnterbankEmailidandverifyerrormessage" time="2.573" classname="Voot.smac.pages.test.VootLoginPageTest" />
-                <testcase name="verifyLoginScreeen" time="25.166" classname="Voot.smac.pages.test.VootLoginPageTest" />
+            <testcase name="verifyLoginScreeen" time="25.793" classname="Voot.smac.pages.test.VootLoginPageTest" />
+                <testcase name="enter_valid_Email_In_input_Text_field" time="0.585" classname="Voot.smac.pages.test.VootLoginPageTest" />
+                <testcase name="EnterbankEmailidandverifyerrormessage" time="2.580" classname="Voot.smac.pages.test.VootLoginPageTest" />
       
 </testsuite>
