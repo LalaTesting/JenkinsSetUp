@@ -9,4 +9,19 @@ public class ChannelsPageTest extends BaseClass {
 		channelpage.verifyClannelListOverlayisDisplayed();	
 	}
 	
+	
+	@Test(priority=2,description ="Verify whether user is able to view all the elements present in Channels overlay.")
+	public void OverlaywithListofchannels() throws InterruptedException{
+		channelpage.viewAlltheEChannelNamePresentinChannelsOverlay();
+	}
+	
+	@Test(priority=3,description ="Verify whether user is able to navigate to Channel details page when clicked on any Channel(Logo) in channel overlay.")
+	public void Clickonanychannel() throws InterruptedException{
+		channelpage.clickedAnyChannelInChannelOverlay();
+	}
+	
+	@Test(priority=4,description ="Verify whether user is able to view all details present in Channel details page.")
+	public void navigateToChannelDetailsPage() throws InterruptedException{
+		channelpage.verifyweatherUserisnavigatedToChannellandingPage();
+	}
 }

@@ -8,5 +8,7 @@ public class ApplicationData {
 	public static String OrTextValue = "OR";
 	public static String LoginWithTextValue = "LOGIN WITH";
 	public static String errorMessage = "Please enter valid email id";
+	
+	public static String channelsTitle="Watch Colors Tamil TV Full Shows & Serials Online (HD) | Get Free HD Streaming of Colors Tamil Latest TV Serial Episodes, Videos and Clips on Voot";
 
 }

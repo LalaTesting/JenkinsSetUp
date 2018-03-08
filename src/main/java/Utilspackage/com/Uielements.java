@@ -12,8 +12,15 @@ public class Uielements
 	public static String Kids_menu_id="kids_dropbtn";
 	public static String  channels_id="channels_dropbtn";
 	public static String channelsOverlay_xpath="//div[@id='Channels']";
+	public static String  channelsList_withNamexpath="//div[@id='channels']//a//span";
+	public static String channelslandingbreadcumbs_xpath="//div[@class='VSBreadcrumbs']";
+	
+	
+	//Movies overlay in header section
 	public static String Movies_id="movies_dropbtn";
 	public static String Moviesoverlayid="Movies";
+
+	
 	
  //HomePage carausal playlist elemens
 

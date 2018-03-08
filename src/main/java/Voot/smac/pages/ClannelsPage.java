@@ -1,10 +1,14 @@
 package Voot.smac.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.Reporter;
 
+import Utilspackage.com.ApplicationData;
 import Utilspackage.com.GenericFunctions;
 import Utilspackage.com.Uielements;
 
@@ -12,7 +16,7 @@ public class ClannelsPage extends Uielements
 {
 
 	WebDriver driver;
-	WebElement channelsmenu,channelsOverlay ;
+	WebElement channelsmenu,channelsOverlay,listOfChannels,channelDeatilsPage;
 	GenericFunctions function=new GenericFunctions(driver);
 	
 	public ClannelsPage(WebDriver driver ){
@@ -39,6 +43,49 @@ public class ClannelsPage extends Uielements
 	}
 	else return false;
 	}
+	
+	
+	public void viewAlltheEChannelNamePresentinChannelsOverlay() throws InterruptedException{
+		List<WebElement>listOfChannels=driver.findElements(By.xpath(channelsList_withNamexpath));
+		for(WebElement channelaname : listOfChannels){
+			System.out.println("Overlay with List of channels and channel name is ++++++++++::::::::::"   +channelaname.getText());
+			function.sleepMode(3000);
+		}
+		
+	}
+	
+	public void clickedAnyChannelInChannelOverlay() throws InterruptedException{
+		verifyClannelListOverlayisDisplayed();
+		List<WebElement>listOfChannels=driver.findElements(By.xpath(channelsList_withNamexpath));
+		for(WebElement channelaname : listOfChannels){
+			if(channelaname.getText().contains("Colors Tamil"))
+			{
+				channelaname.click();
+				System.out.println("Clickedon color Tamil channel ");
+				function.sleepMode(3000);
+				
+				
+			}
+		}
+	}
+	
+	public boolean verifyweatherUserisnavigatedToChannellandingPage() throws InterruptedException
+	{
+		channelDeatilsPage=driver.findElement(By.xpath(channelslandingbreadcumbs_xpath));
+		function.highLighterMethod(driver, channelDeatilsPage);
+		System.out.println("User should be able to view -Bread crumbs(For ex: Home> Channels)  for navigation of channel landing page.");
+		if(channelDeatilsPage.isDisplayed()){
+			System.out.println("Verify Title of the page ");
+			String actualTitle=driver.getTitle();
+			System.out.println("User should be to navigated to Channel details page of selected channel and verify the title of the page::::+++:::"+actualTitle);
+			Assert.assertEquals(actualTitle, ApplicationData.channelsTitle);
+           String currenturlofthePage= driver.getCurrentUrl();
+           System.out.println("Current Url is"+currenturlofthePage);
+           
+           return true;
+		}
+		else return false;
+		
+	}
 }
-
 
