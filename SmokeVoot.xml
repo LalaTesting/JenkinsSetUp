@@ -24,7 +24,7 @@
 	<test
 		name="Verification of vot login page of voot application in chrome 
 		browser">
-		<parameter name="browsers" value="chrome123" />
+		<parameter name="browsers" value="chrome" />
 		<classes>
 			<class name="Voot.smac.pages.test.VootLoginPageTest" />
 
@@ -33,7 +33,7 @@
 	</test>
 	<test
 		name="Verification of Channel page of voot application in chrome browser">
-		<parameter name="browsers" value="chrome123" />
+		<parameter name="browsers" value="chrome" />
 		<classes>
 			<class name="Voot.smac.pages.test.ChannelsPageTest" />
 		</classes>
@@ -41,7 +41,7 @@
 	</test>
 	<test
 		name="Verification of movie page of voot application in chrome browser">
-		<parameter name="browsers" value="chrome123" />
+		<parameter name="browsers" value="chrome" />
 		<classes>
 			<class name="Voot.smac.pages.test.MoviesPageTest" />
 		</classes>
