@@ -80,8 +80,6 @@ public class ShowsPages extends Uielements {
 
 			for (WebElement vootAllShow : Allshowsmenu) {
 				System.out.println(vootAllShow.getText());
-
-				functios.sleepMode(3000);
 				if (vootAllShow.getText().contains("2MAD")) {
 					// System.out.println(vootAllShow.getText());
 					vootAllShow.click();

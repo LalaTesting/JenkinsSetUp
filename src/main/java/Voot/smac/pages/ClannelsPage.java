@@ -57,11 +57,13 @@ public class ClannelsPage extends Uielements
 	public void clickedAnyChannelInChannelOverlay() throws InterruptedException{
 		verifyClannelListOverlayisDisplayed();
 		List<WebElement>listOfChannels=driver.findElements(By.xpath(channelsList_withNamexpath));
-		for(WebElement channelaname : listOfChannels){
+		
+		for(WebElement channelaname : listOfChannels)
+		{
 			if(channelaname.getText().contains("Colors Tamil"))
 			{
 				channelaname.click();
-				System.out.println("Clickedon color Tamil channel ");
+				System.out.println("Clicked on color Tamil channel ");
 				function.sleepMode(3000);
 				
 				
@@ -77,10 +79,10 @@ public class ClannelsPage extends Uielements
 		if(channelDeatilsPage.isDisplayed()){
 			System.out.println("Verify Title of the page ");
 			String actualTitle=driver.getTitle();
-			System.out.println("User should be to navigated to Channel details page of selected channel and verify the title of the page::::+++:::"+actualTitle);
+			System.out.println("User should be to navigated to Channel details page and verify the title of the page::::++++++++++++:: ::::::::::"+actualTitle);
 			Assert.assertEquals(actualTitle, ApplicationData.channelsTitle);
            String currenturlofthePage= driver.getCurrentUrl();
-           System.out.println("Current Url is"+currenturlofthePage);
+           System.out.println("Current Url is::::::::::::+++++++++++:::::::::    "+currenturlofthePage);
            
            return true;
 		}

@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class HomePageTest extends BaseClass {
 
-	@Test(priority = 1, description = "TC_HMP_003 :- Verify 'Voot' logo is displayed and alligned in the Homepage.")
+@Test(priority = 1, description = "TC_HMP_003 :- Verify 'Voot' logo is displayed and alligned in the Homepage.")
 	public void verifyVootLogoinHomePage() throws InterruptedException {
 		homepage.vootLogo();
 
@@ -49,16 +49,21 @@ public class HomePageTest extends BaseClass {
 	public void clickOnTheNextButtonOnCoursoual() throws InterruptedException {
 		homepage.clickdotsincoural();
 	}
-	//@Test(priority = 10, description = "Verify thumbnail(In place holder section) is clickable and user is able to navigate to 'Playback' page.")
-	public void Click_on_any_thumbnail_in_the_Master_head_corousel() throws InterruptedException {
-	//	homepage
-	}
+
 	
 	@Test(priority = 11, description = "verify weather User is able to click on the the next courasual forword button")
 	public void verifyAddBannerSectionl() throws InterruptedException {
 		homepage.verify_adbanner_in_homepge_body();
 	}
-@Test(priority = 12, description ="Verify 'Previous' buttons on thumbnail ")
+	
+	@Test(priority = 12, description = "verify weather User is able to see courasual description text Value")
+	public void verifyDescriptionTextValueOFMasterCarousal() throws InterruptedException {
+		Thread.sleep(2000);
+		homepage.clickOnthumbnailinthemasterheadcorousel();
+	}
+	
+	
+ @Test(priority = 12, description ="Verify 'Previous' buttons on thumbnail ")
 	public void clickOnThePreviousButtonOnCoursoual() throws InterruptedException {
 		homepage.clickonbackButtonOnCarosual();
 	}

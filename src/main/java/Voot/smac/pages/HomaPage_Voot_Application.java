@@ -1,5 +1,6 @@
 package Voot.smac.pages;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -17,7 +18,7 @@ public class HomaPage_Voot_Application extends Uielements {
 
 	WebDriver driver;
 	WebElement vootlogo, newShow, showdrop_down, Kidsdrop_down, channeldrop_down, Moviesdrop_down, searchIcon,
-			dotbutton, clickingonthe5dots, UserLoginIcon, NextButton, backButton, adbanner_body;
+			dotbutton, clickingonthe5dots, UserLoginIcon, NextButton, backButton, adbanner_body,masterCoroselDescription,playanycarosuoul;
 	GenericFunctions function = new GenericFunctions(driver);
 
 	public HomaPage_Voot_Application(WebDriver driver) {
@@ -159,23 +160,41 @@ function.highLighterMethod(driver, NextButton);
 		} else
 			return false;
 	}
-	/*public boolean clickOnthumbnailinthemasterheadcorousel () throws InterruptedException {
-		 = driver.findElement(By.xpath(adbannerxpath));
-		function.highLighterMethod(driver, adbanner_body);
-		Reporter.log("Ad banner has been  Highlighted");
-		function.sleepMode(2000);
-		function.scroll_top_to_bottom(driver);
-		function.sleepMode(2000);
-
-		if (adbanner_body.isDisplayed()) {
-			System.out.println(" Ad Banner is displaying on the home page screen");
-			Reporter.log("Ad Banner is displaying on the home page screen");
-			function.scrollDownFromTopOfPage(driver);
-			function.sleepMode(2000);
-			return true;
-		} else
-			return false;
+	public void clickOnthumbnailinthemasterheadcorousel() throws InterruptedException {
+		playanycarosuoul=driver.findElement(By.xpath(playanyvideofromcarasol));
+		
+		playanycarosuoul.click();
+		function.sleepMode(3000);
+    	System.out.println(driver.getCurrentUrl());
+		function.sleepMode(5000);
+		System.out.println(driver.getTitle());
+		
+	}
+	/*List<WebElement>masterCoroselDescription	 = driver.findElements(By.xpath("//div[@class='details']//h6"));
+	Iterator<WebElement>itr=masterCoroselDescription.iterator();
+	while(itr.hasNext())
+	{
+		function.sleepMode(1000);
+		WebElement ele =itr.next();	
+        // System.out.println(ele.getAttribute("innerHTML"));	
+		System.out.println(ele.getText().contains("The girl who got Raftaar blushing!"));
+		   ele.click();
+		function.sleepMode(3000);
+      if(ele.getText().contains("The girl who got Raftaar blushing!"));
+       ele.click();
+       function.sleepMode(5000);
+	}
 	}*/
+  /*  int count=masterCoroselDescription.size();
+	       for(int i=0;i<=count-1;){
+		    System.out.println("Carousa Text value is"+ masterCoroselDescription.get(i).getText());
+		    Thread.sleep(3000);
+		    i++;
+	       }}*/
+		  //  if(masterCoroselDescription.get(i).getText().contains("Chak De Phatte, Chandigarh!"))){
+	
+	
+		    
 	public void clickdotsincoural() throws InterruptedException {
 		List<WebElement> dotbutton = driver.findElements(By.xpath(dotsxpathincarosual));
 		int countsdots = dotbutton.size();
