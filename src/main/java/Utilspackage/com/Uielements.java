@@ -1,5 +1,7 @@
 package Utilspackage.com;
 
+import java.util.Stack;
+
 public class Uielements
 {
 	
@@ -52,6 +54,14 @@ public class Uielements
 	//Email field supply the data in email text field
 	public static String emailErrormessage="//div[@class='errorMsgForMainPopFromServer']";
 	
+	//Search page Ui Elements
+	public static String searchiconxpathforMotuPatlu="//div[@class='VSearchHomeContentWrap']//div[@id='Motu-Patlu-S01']";
+	public static String serchIconinsearchBoxXpath="//label[@class='VSearchHomeSearchIcon']";
+	public static String closeIconinsearchPage="//div[@class='VSearchHomeClose']";
+	
+	public static String SearchTextBox_id="VSearchHome1";
+	
+	public static  String Searchresult_id="Motu-Patlu-S01";
 	
 	
 

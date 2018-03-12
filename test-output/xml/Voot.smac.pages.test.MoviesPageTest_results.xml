@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.791">
+           time="4.801">
   <properties />
   
   
-            <testcase name="mousehoveronMoviesintheheaderandverify" time="4.791" classname="Voot.smac.pages.test.MoviesPageTest" />
+            <testcase name="mousehoveronMoviesintheheaderandverify" time="4.801" classname="Voot.smac.pages.test.MoviesPageTest" />
       
 </testsuite>

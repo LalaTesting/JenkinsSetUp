@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Verification of Home page of voot application in chrome    browser"
-           tests="11"
+           tests="12"
            failures="0"
            errors="0"
            skipped="0"
-           time="185.528">
+           time="169.364">
   <properties />
   
   
-            <testcase name="verifyDescriptionTextValueOFMasterCarousal" time="10.353" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifySearchinHomepage" time="0.190" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifykidsmenuinHomepage" time="0.178" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyChannelsmenuinHomepage" time="0.183" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyVootLogoinHomePage" time="0.388" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyshowsmenuinHomepage" time="0.239" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyMoviesmenuinHomepage" time="0.182" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyuserloginiconinHomepage" time="1.178" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="clickOnTheNextButtonOnCoursoual" time="62.343" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyAddBannerSectionl" time="109.719" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifynewshowLinkinHomePage" time="0.575" classname="Voot.smac.pages.test.HomePageTest" />
+            <testcase name="verifynewshowLinkinHomePage" time="0.362" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifySearchinHomepage" time="0.193" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifykidsmenuinHomepage" time="0.241" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="clickOnThePreviousButtonOnCoursoual" time="2.658" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyshowsmenuinHomepage" time="0.300" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyAddBannerSectionl" time="110.629" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyMoviesmenuinHomepage" time="0.234" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="clickOnTheNextButtonOnCoursoual" time="42.487" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyuserloginiconinHomepage" time="1.217" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyVootLogoinHomePage" time="0.262" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyDescriptionTextValueOFMasterCarousal" time="10.539" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyChannelsmenuinHomepage" time="0.242" classname="Voot.smac.pages.test.HomePageTest" />
       
 </testsuite>

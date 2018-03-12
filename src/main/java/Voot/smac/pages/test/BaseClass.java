@@ -13,6 +13,7 @@ import Utilspackage.com.GenericFunctions;
 import Voot.smac.pages.ClannelsPage;
 import Voot.smac.pages.HomaPage_Voot_Application;
 import Voot.smac.pages.MoviesPage;
+import Voot.smac.pages.SearchPage;
 import Voot.smac.pages.ShowsPages;
 import Voot.smac.pages.VootLoginPage;
 
@@ -24,6 +25,7 @@ public class BaseClass {
 	public GenericFunctions functios;
 	public ClannelsPage channelpage;
 	public MoviesPage moviepage;
+	public SearchPage searchpage;
 
 	// Just i am adding authour in our code
 
@@ -64,7 +66,10 @@ public class BaseClass {
 		functios = new GenericFunctions(driver);
 		
 		channelpage=new ClannelsPage(driver);
+		
 		moviepage=new MoviesPage(driver);
+		
+		searchpage= new SearchPage(driver);
 	}
 
 	@AfterClass

@@ -47,9 +47,11 @@
 		</classes>
 	</test>
 
-</suite>
-
-
- 
-
-	
+<test
+		name="Verification off Search page of voot application in chrome browser">
+		<parameter name="browsers" value="chrome" />
+		<classes>
+			<class name="Voot.smac.pages.test.SearchPageTest" />
+		</classes>
+	</test>
+	</suite>
