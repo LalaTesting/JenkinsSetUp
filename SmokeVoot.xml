@@ -39,6 +39,7 @@
 		</classes>
 
 	</test>
+	
 	<test
 		name="Verification of movie page of voot application in chrome browser">
 		<parameter name="browsers" value="chrome" />

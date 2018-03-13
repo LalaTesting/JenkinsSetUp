@@ -21,8 +21,8 @@ public class Uielements
 	//Movies overlay in header section
 	public static String Movies_id="movies_dropbtn";
 	public static String Moviesoverlayid="Movies";
-
-	
+    public static String popularHindiMovie_xpath="//div[@id='Popular Hindi Movies']/h6";
+    public static String  popularmovieValue_xpath="//div[@id='Popular Hindi Movies']//a";
 	
  //HomePage carausal playlist elemens
 
