@@ -93,9 +93,9 @@ public class GenericFunctions {
 
 	public void highLighterMethod(WebDriver driver, WebElement element) throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		for (int i = 0; i < 1; i++) {
-			 js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "color: yellow; border: 2px solid yellow;");
-			Thread.sleep(100);
+		for (int i = 0; i < 2; i++) {
+			 js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "color: red; border: 2px solid red;");
+			//Thread.sleep(100);
 
 		}
 	}

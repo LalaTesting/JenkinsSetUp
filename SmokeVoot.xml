@@ -39,7 +39,7 @@
 		</classes>
 
 	</test>
-	
+
 	<test
 		name="Verification of movie page of voot application in chrome browser">
 		<parameter name="browsers" value="chrome" />
@@ -48,11 +48,12 @@
 		</classes>
 	</test>
 
-<test
+	<test
 		name="Verification off Search page of voot application in chrome browser">
 		<parameter name="browsers" value="chrome" />
 		<classes>
 			<class name="Voot.smac.pages.test.SearchPageTest" />
 		</classes>
 	</test>
-	</suite>
+
+</suite>

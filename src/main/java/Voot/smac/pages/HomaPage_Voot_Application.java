@@ -201,7 +201,7 @@ function.highLighterMethod(driver, NextButton);
 		System.out.println("Verify 'Pagination markers' and count of them." + countsdots);
 		for (int i = 0; i < countsdots; i++) {
 			clickonNextButtonOnCarosual();
-			System.out.println("Next button is clicking");
+			//System.out.println("Next button is clicking");
 			function.sleepMode(2000);
 		}
 	}

@@ -23,8 +23,16 @@ public class Uielements
 	public static String Moviesoverlayid="Movies";
     public static String popularHindiMovie_xpath="//div[@id='Popular Hindi Movies']/h6";
     public static String  popularmovieValue_xpath="//div[@id='Popular Hindi Movies']//a";
-	
+    public static String popularkannadamovie_xpath="//div[@id='Popular Kannada Movies']/h6";
+    public static String popularkannadamovielist_xpath="//div[@id='Popular Kannada Movies']//a";
+    public static String popularBangalimovie_xpath=" //div[@id='Popular Bengali Movies']/h6";
+    public static String popularBangalimovielist_xpath="//div[@id='Popular Bengali Movies']//a";
+    public static String popularKidsmovie_xpath="  //div[@id='Kids Movies']/h6";
+    public static String popularKidsmovielist_xpath="  //div[@id='Kids Movies']//a";
+    
  //HomePage carausal playlist elemens
+
+
 
 	public static String BackButtononcarousal="//button[text()='Previous']";
 	public static String foarwordButtoncarausal="//button[text()='Next']";
