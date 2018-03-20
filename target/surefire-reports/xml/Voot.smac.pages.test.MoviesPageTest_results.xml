@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verification of movie page of voot application in chrome browser"
+           tests="15"
+           failures="1"
+           errors="0"
+           skipped="13"
+           time="11.336">
+  <properties />
+            <testcase name="tearDown" time="0.000" classname="Voot.smac.pages.test.MoviesPageTest">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  Voot.smac.pages.test.BaseClass.tearDown(BaseClass.java:122)
+  sun.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+  org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="endReport" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifyPopularkannadaMoviesValue" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifyPopularBangaliMoviesValue" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifyPopularHindiMoviesValue" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifyPopularKidsMoviesValue" time="0.0" classname="Voot.smac.pages.test.MoviesPageTest">
+          <skipped />
+    </testcase>
+  
+            <testcase name="mousehoveronMoviesintheheaderandverify" time="11.336" classname="Voot.smac.pages.test.MoviesPageTest" />
+      
+</testsuite>

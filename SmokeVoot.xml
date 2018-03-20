@@ -21,6 +21,7 @@
 			<class name="Voot.smac.pages.test.ShowPagesTest" />
 		</classes>
 	</test>
+
 	<test
 		name="Verification of vot login page of voot application in chrome 
 		browser">
@@ -31,6 +32,7 @@
 		</classes>
 
 	</test>
+	
 	<test
 		name="Verification of Channel page of voot application in chrome browser">
 		<parameter name="browsers" value="chrome" />

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Parallel test suite]">
+  <parameter name="browsers" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Verification of vot login page of voot application in chrome    browser(failed)">
+    <parameter name="browsers" value="chrome"/>
+    <classes>
+      <class name="Voot.smac.pages.test.SearchPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.SearchPageTest -->
+      <class name="Voot.smac.pages.test.ChannelsPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ChannelsPageTest -->
+      <class name="Voot.smac.pages.test.VootLoginPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="EnterbankEmailidandverifyerrormessage"/>
+          <include name="setExtent"/>
+          <include name="enter_valid_Email_In_input_Text_field"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.VootLoginPageTest -->
+      <class name="Voot.smac.pages.test.MoviesPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.MoviesPageTest -->
+      <class name="Voot.smac.pages.test.ShowPagesTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
+      <class name="Voot.smac.pages.test.HomePageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.HomePageTest -->
+    </classes>
+  </test> <!-- Verification of vot login page of voot application in chrome    browser(failed) -->
+  <test name="Verification of Channel page of voot application in chrome browser(failed)">
+    <parameter name="browsers" value="chrome"/>
+    <classes>
+      <class name="Voot.smac.pages.test.SearchPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.SearchPageTest -->
+      <class name="Voot.smac.pages.test.ChannelsPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="Clickonanychannel"/>
+          <include name="navigateToChannelDetailsPage"/>
+          <include name="OverlaywithListofchannels"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ChannelsPageTest -->
+      <class name="Voot.smac.pages.test.VootLoginPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.VootLoginPageTest -->
+      <class name="Voot.smac.pages.test.MoviesPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.MoviesPageTest -->
+      <class name="Voot.smac.pages.test.ShowPagesTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
+      <class name="Voot.smac.pages.test.HomePageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.HomePageTest -->
+    </classes>
+  </test> <!-- Verification of Channel page of voot application in chrome browser(failed) -->
+  <test name="Verification of movie page of voot application in chrome browser(failed)">
+    <parameter name="browsers" value="chrome"/>
+    <classes>
+      <class name="Voot.smac.pages.test.SearchPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.SearchPageTest -->
+      <class name="Voot.smac.pages.test.ChannelsPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ChannelsPageTest -->
+      <class name="Voot.smac.pages.test.VootLoginPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.VootLoginPageTest -->
+      <class name="Voot.smac.pages.test.MoviesPageTest">
+        <methods>
+          <include name="verifyPopularKidsMoviesValue"/>
+          <include name="setBrowsers"/>
+          <include name="verifyPopularHindiMoviesValue"/>
+          <include name="verifyPopularBangaliMoviesValue"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+          <include name="verifyPopularkannadaMoviesValue"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.MoviesPageTest -->
+      <class name="Voot.smac.pages.test.ShowPagesTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
+      <class name="Voot.smac.pages.test.HomePageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.HomePageTest -->
+    </classes>
+  </test> <!-- Verification of movie page of voot application in chrome browser(failed) -->
+  <test name="Verification off Search page of voot application in chrome browser(failed)">
+    <parameter name="browsers" value="chrome"/>
+    <classes>
+      <class name="Voot.smac.pages.test.SearchPageTest">
+        <methods>
+          <include name="verify_Close_Icon_In_SearchPage"/>
+          <include name="setBrowsers"/>
+          <include name="enter_Some_Value_inSide_the_Text_Box_In_SearchPage"/>
+          <include name="verify_Search_Text_Box_In_SearchPage"/>
+          <include name="verify_Search_Icon_In_SearchPage"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.SearchPageTest -->
+      <class name="Voot.smac.pages.test.ChannelsPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ChannelsPageTest -->
+      <class name="Voot.smac.pages.test.VootLoginPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.VootLoginPageTest -->
+      <class name="Voot.smac.pages.test.MoviesPageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.MoviesPageTest -->
+      <class name="Voot.smac.pages.test.ShowPagesTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
+      <class name="Voot.smac.pages.test.HomePageTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.HomePageTest -->
+    </classes>
+  </test> <!-- Verification off Search page of voot application in chrome browser(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

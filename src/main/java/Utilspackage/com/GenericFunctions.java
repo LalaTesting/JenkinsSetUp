@@ -1,16 +1,21 @@
 package Utilspackage.com;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class GenericFunctions {
 	WebDriver driver;
@@ -121,4 +126,15 @@ public void scrollDownFromTopOfPage(WebDriver driver) throws InterruptedExceptio
 	 Thread.sleep(2000);
 		
 	}
-}}
+
+     }
+}
+     /*  public static void captureScreenShot(WebDriver driver)
+                 {
+                       File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+             
+            	         FileUtils.copyFile (src, new File("E:\\for Android native app which used for testobject\\voot\\VootScreenShot.png"));
+                    }
+       }*/
+
+  

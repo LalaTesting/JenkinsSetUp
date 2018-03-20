@@ -1,15 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Verification of vot login page of voot application in chrome    browser"
-           tests="3"
-           failures="0"
+           tests="7"
+           failures="1"
            errors="0"
-           skipped="0"
-           time="27.208">
+           skipped="5"
+           time="24.240">
   <properties />
+            <testcase name="tearDown" time="0.000" classname="Voot.smac.pages.test.VootLoginPageTest">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  Voot.smac.pages.test.BaseClass.tearDown(BaseClass.java:122)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:497)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:744)
+  org.testng.TestRunner.run(TestRunner.java:602)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+  org.testng.SuiteRunner.run(SuiteRunner.java:289)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+  org.testng.TestNG.runSuites(TestNG.java:1144)
+  org.testng.TestNG.run(TestNG.java:1115)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+      </failure>
+
+          </testcase>
   
+            <testcase name="endReport" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="EnterbankEmailidandverifyerrormessage" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="enter_valid_Email_In_input_Text_field" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
+          <skipped />
+    </testcase>
   
-            <testcase name="EnterbankEmailidandverifyerrormessage" time="2.340" classname="Voot.smac.pages.test.VootLoginPageTest" />
-                <testcase name="verifyLoginScreeen" time="24.404" classname="Voot.smac.pages.test.VootLoginPageTest" />
-                <testcase name="enter_valid_Email_In_input_Text_field" time="0.464" classname="Voot.smac.pages.test.VootLoginPageTest" />
+            <testcase name="verifyLoginScreeen" time="24.240" classname="Voot.smac.pages.test.VootLoginPageTest" />
       
 </testsuite>

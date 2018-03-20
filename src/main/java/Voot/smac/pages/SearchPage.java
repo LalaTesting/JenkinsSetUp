@@ -22,7 +22,7 @@ public class SearchPage  extends Uielements{
 	}
 	
      public boolean verifySearchIconInHomePage() throws InterruptedException{
-    	 searchIcon=driver.findElement(By.className("VSearch"));
+    	 searchIcon=driver.findElement(By.xpath(Serach_Xpath));
     	 function.highLighterMethod(driver, searchIcon);
     	 function.sleepMode(2000);
     	 if(searchIcon.isDisplayed()){
@@ -34,13 +34,14 @@ public class SearchPage  extends Uielements{
     		
     	 }
        public void clickOnTheSearchIconinHomePage() throws InterruptedException{
-    	   searchIcon.click();
-    		 function.sleepMode(2000);
+    	   driver.findElement(By.xpath(Serach_Xpath)).click();
+    	
 
        }
        
        public boolean verifySechIconInSeachPage() throws InterruptedException{
     	   clickOnTheSearchIconinHomePage();
+    	
     	  SearchIconinSearchpage= driver.findElement(By.xpath(serchIconinsearchBoxXpath));
     	  function.highLighterMethod(driver, SearchIconinSearchpage);
     		 function.sleepMode(2000);
@@ -69,7 +70,7 @@ public class SearchPage  extends Uielements{
        
        public void verifyeCloseIconinSearchPage() throws InterruptedException{
     	 
-    		 function.sleepMode(2000);
+    	   driver.findElement(By.xpath(Serach_Xpath)).click();
     	   closeIcon1=   driver.findElement(By.xpath(closeIconinsearchPage));
     	   function.highLighterMethod(driver, closeIcon1);
     		 function.sleepMode(2000);
@@ -89,7 +90,10 @@ public class SearchPage  extends Uielements{
        }
        
        public void enterSomeSearchvalueandVerifyTheResult(String enter) throws InterruptedException{
-    	   SearchInputBox.sendKeys(enter);
+    	 //  SearchInputBox.sendKeys(enter);
+    	   clickOnTheSearchIconinHomePage();
+    	   SearchtextBox();
+    	   driver.findElement(By.id(SearchTextBox_id)).sendKeys(enter);
     	   System.out.println("User has given this  value:::::::::::::+++++++++"+enter);
     	   function.sleepMode(5000);
    

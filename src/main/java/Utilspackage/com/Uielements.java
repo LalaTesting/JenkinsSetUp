@@ -17,6 +17,8 @@ public class Uielements
 	public static String  channelsList_withNamexpath="//div[@id='channels']//a//span";
 	public static String channelslandingbreadcumbs_xpath="//div[@class='VSBreadcrumbs']";
 	
+	public static String Serach_Xpath="//div[@class='VSearch']";
+	
 	
 	//Movies overlay in header section
 	public static String Movies_id="movies_dropbtn";
