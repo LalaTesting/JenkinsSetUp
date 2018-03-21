@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
-      <![CDATA[Search Icon is present in home page]]>
+      <![CDATA[user mousehover on 'Channels' in the header menu of  'Homepage']]>
     </line>
     <line>
-      <![CDATA[Search icon is present in Search page]]>
+      <![CDATA[user mousehover on 'Channels' in the header menu of  'Homepage']]>
     </line>
     <line>
-      <![CDATA[Search Text box is present in Search page]]>
+      <![CDATA[user mousehover on 'Channels' in the header menu of  'Homepage']]>
     </line>
   </reporter-output>
-  <suite name="Parallel test suite" duration-ms="104682" started-at="2018-03-20T19:19:01Z" finished-at="2018-03-20T19:20:46Z">
+  <suite name="Parallel test suite" duration-ms="104149" started-at="2018-03-21T14:37:12Z" finished-at="2018-03-21T14:38:56Z">
     <groups>
     </groups>
-    <test name="Verification off Search page of voot application in chrome browser" duration-ms="104682" started-at="2018-03-20T19:19:01Z" finished-at="2018-03-20T19:20:46Z">
-      <class name="Voot.smac.pages.test.SearchPageTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="setExtent" is-config="true" duration-ms="235" started-at="2018-03-21T00:49:01Z" finished-at="2018-03-21T00:49:02Z">
+    <test name="Verification of Channel page of voot application in chrome browser" duration-ms="104149" started-at="2018-03-21T14:37:12Z" finished-at="2018-03-21T14:38:56Z">
+      <class name="Voot.smac.pages.test.ChannelsPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="setExtent" is-config="true" duration-ms="411" started-at="2018-03-21T20:07:12Z" finished-at="2018-03-21T20:07:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="11988" started-at="2018-03-21T00:49:02Z" finished-at="2018-03-21T00:49:13Z">
+        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="11315" started-at="2018-03-21T20:07:13Z" finished-at="2018-03-21T20:07:24Z">
           <params>
             <param index="0">
               <value>
@@ -31,25 +31,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowsers -->
-        <test-method status="PASS" signature="verify_Search_Icon_In_HomePage()[pri:1, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="verify_Search_Icon_In_HomePage" duration-ms="2291" started-at="2018-03-21T00:49:13Z" description="Verify  Search Icon in Home Page screen" finished-at="2018-03-21T00:49:16Z">
+        <test-method status="PASS" signature="mousehover_ChannelsInHeaderMenuOfHomepage()[pri:1, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="mousehover_ChannelsInHeaderMenuOfHomepage" duration-ms="808" started-at="2018-03-21T20:07:24Z" description="Verify list overlay is displayed when user mousehover on &#039;Channels&#039; in the header menu of  &#039;Homepage&#039;." finished-at="2018-03-21T20:07:25Z">
           <reporter-output>
             <line>
-              <![CDATA[Search Icon is present in home page]]>
+              <![CDATA[user mousehover on 'Channels' in the header menu of  'Homepage']]>
             </line>
           </reporter-output>
-        </test-method> <!-- verify_Search_Icon_In_HomePage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2241" started-at="2018-03-21T00:49:16Z" finished-at="2018-03-21T00:49:18Z">
+        </test-method> <!-- mousehover_ChannelsInHeaderMenuOfHomepage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2238" started-at="2018-03-21T20:07:25Z" finished-at="2018-03-21T20:07:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Search_Icon_In_HomePage status=SUCCESS method=SearchPageTest.verify_Search_Icon_In_HomePage()[pri:1, instance:Voot.smac.pages.test.SearchPageTest@1f554b06] output=Search Icon is present in home page]]]>
+                <![CDATA[[TestResult name=mousehover_ChannelsInHeaderMenuOfHomepage status=SUCCESS method=ChannelsPageTest.mousehover_ChannelsInHeaderMenuOfHomepage()[pri:1, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06] output=user mousehover on 'Channels' in the header menu of  'Homepage']]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="12109" started-at="2018-03-21T00:49:18Z" finished-at="2018-03-21T00:49:30Z">
+        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="10922" started-at="2018-03-21T20:07:27Z" finished-at="2018-03-21T20:07:38Z">
           <params>
             <param index="0">
               <value>
@@ -60,25 +60,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowsers -->
-        <test-method status="PASS" signature="verify_Search_Icon_In_SearchPage()[pri:2, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="verify_Search_Icon_In_SearchPage" duration-ms="2468" started-at="2018-03-21T00:49:30Z" description="Verify  Search Icon in search Page screen" finished-at="2018-03-21T00:49:33Z">
+        <test-method status="PASS" signature="OverlaywithListofchannels()[pri:2, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="OverlaywithListofchannels" duration-ms="40178" started-at="2018-03-21T20:07:38Z" description="Verify whether user is able to view all the elements present in Channels overlay." finished-at="2018-03-21T20:08:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OverlaywithListofchannels -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2102" started-at="2018-03-21T20:08:18Z" finished-at="2018-03-21T20:08:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OverlaywithListofchannels status=SUCCESS method=ChannelsPageTest.OverlaywithListofchannels()[pri:2, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="12494" started-at="2018-03-21T20:08:20Z" finished-at="2018-03-21T20:08:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowsers -->
+        <test-method status="PASS" signature="Clickonanychannel()[pri:3, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="Clickonanychannel" duration-ms="4393" started-at="2018-03-21T20:08:33Z" description="Verify whether user is able to navigate to Channel details page when clicked on any Channel(Logo) in channel overlay." finished-at="2018-03-21T20:08:37Z">
           <reporter-output>
             <line>
-              <![CDATA[Search icon is present in Search page]]>
+              <![CDATA[user mousehover on 'Channels' in the header menu of  'Homepage']]>
             </line>
           </reporter-output>
-        </test-method> <!-- verify_Search_Icon_In_SearchPage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2162" started-at="2018-03-21T00:49:33Z" finished-at="2018-03-21T00:49:35Z">
+        </test-method> <!-- Clickonanychannel -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2112" started-at="2018-03-21T20:08:37Z" finished-at="2018-03-21T20:08:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_Search_Icon_In_SearchPage status=SUCCESS method=SearchPageTest.verify_Search_Icon_In_SearchPage()[pri:2, instance:Voot.smac.pages.test.SearchPageTest@1f554b06] output=Search icon is present in Search page]]]>
+                <![CDATA[[TestResult name=Clickonanychannel status=SUCCESS method=ChannelsPageTest.Clickonanychannel()[pri:3, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06] output=user mousehover on 'Channels' in the header menu of  'Homepage']]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="14433" started-at="2018-03-21T00:49:35Z" finished-at="2018-03-21T00:49:49Z">
+        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="9119" started-at="2018-03-21T20:08:39Z" finished-at="2018-03-21T20:08:48Z">
           <params>
             <param index="0">
               <value>
@@ -89,81 +115,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowsers -->
-        <test-method status="PASS" signature="verify_Close_Icon_In_SearchPage()[pri:3, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="verify_Close_Icon_In_SearchPage" duration-ms="2626" started-at="2018-03-21T00:49:49Z" description="Verify  Close Icon in search Page screen" finished-at="2018-03-21T00:49:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Close_Icon_In_SearchPage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2148" started-at="2018-03-21T00:49:52Z" finished-at="2018-03-21T00:49:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Close_Icon_In_SearchPage status=SUCCESS method=SearchPageTest.verify_Close_Icon_In_SearchPage()[pri:3, instance:Voot.smac.pages.test.SearchPageTest@1f554b06] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="13885" started-at="2018-03-21T00:49:54Z" finished-at="2018-03-21T00:50:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowsers -->
-        <test-method status="PASS" signature="verify_Search_Text_Box_In_SearchPage()[pri:4, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="verify_Search_Text_Box_In_SearchPage" duration-ms="210" started-at="2018-03-21T00:50:08Z" description="Verify  Search Text box  in search Page screen" finished-at="2018-03-21T00:50:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_Search_Text_Box_In_SearchPage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2134" started-at="2018-03-21T00:50:08Z" finished-at="2018-03-21T00:50:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_Search_Text_Box_In_SearchPage status=SUCCESS method=SearchPageTest.verify_Search_Text_Box_In_SearchPage()[pri:4, instance:Voot.smac.pages.test.SearchPageTest@1f554b06] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="setBrowsers" is-config="true" duration-ms="17773" started-at="2018-03-21T00:50:10Z" finished-at="2018-03-21T00:50:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowsers -->
-        <test-method status="PASS" signature="enter_Some_Value_inSide_the_Text_Box_In_SearchPage()[pri:5, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="enter_Some_Value_inSide_the_Text_Box_In_SearchPage" duration-ms="14913" started-at="2018-03-21T00:50:28Z" description="Verify  user is able to enter the Serch value in Serch text box in  search Page screen,erify  Search Result after entering  the Searchh value in  Serch text box in search Page screen" finished-at="2018-03-21T00:50:43Z">
+        <test-method status="PASS" signature="navigateToChannelDetailsPage()[pri:4, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="navigateToChannelDetailsPage" duration-ms="5531" started-at="2018-03-21T20:08:48Z" description="Verify whether user is able to view all details present in Channel details page." finished-at="2018-03-21T20:08:54Z">
           <reporter-output>
             <line>
-              <![CDATA[Search Text box is present in Search page]]>
+              <![CDATA[user mousehover on 'Channels' in the header menu of  'Homepage']]>
             </line>
           </reporter-output>
-        </test-method> <!-- enter_Some_Value_inSide_the_Text_Box_In_SearchPage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2554" started-at="2018-03-21T00:50:43Z" finished-at="2018-03-21T00:50:45Z">
+        </test-method> <!-- navigateToChannelDetailsPage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="tearDown" is-config="true" duration-ms="2103" started-at="2018-03-21T20:08:54Z" finished-at="2018-03-21T20:08:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enter_Some_Value_inSide_the_Text_Box_In_SearchPage status=SUCCESS method=SearchPageTest.enter_Some_Value_inSide_the_Text_Box_In_SearchPage()[pri:5, instance:Voot.smac.pages.test.SearchPageTest@1f554b06] output=Search Text box is present in Search page]]]>
+                <![CDATA[[TestResult name=navigateToChannelDetailsPage status=SUCCESS method=ChannelsPageTest.navigateToChannelDetailsPage()[pri:4, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06] output=user mousehover on 'Channels' in the header menu of  'Homepage']]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:Voot.smac.pages.test.SearchPageTest@1f554b06]" name="endReport" is-config="true" duration-ms="489" started-at="2018-03-21T00:50:45Z" finished-at="2018-03-21T00:50:46Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:Voot.smac.pages.test.ChannelsPageTest@1f554b06]" name="endReport" is-config="true" duration-ms="388" started-at="2018-03-21T20:08:56Z" finished-at="2018-03-21T20:08:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- Voot.smac.pages.test.SearchPageTest -->
-    </test> <!-- Verification off Search page of voot application in chrome browser -->
+      </class> <!-- Voot.smac.pages.test.ChannelsPageTest -->
+    </test> <!-- Verification of Channel page of voot application in chrome browser -->
   </suite> <!-- Parallel test suite -->
 </testng-results>

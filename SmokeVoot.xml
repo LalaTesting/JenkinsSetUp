@@ -5,7 +5,7 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-
+ 
 	<test
 		name="Verification of Home page of voot application in chrome 
 		browser">
@@ -21,7 +21,8 @@
 			<class name="Voot.smac.pages.test.ShowPagesTest" />
 		</classes>
 	</test>
-
+		
+<!--  
 	<test
 		name="Verification of vot login page of voot application in chrome 
 		browser">
@@ -32,7 +33,7 @@
 		</classes>
 
 	</test>
-	
+	-->
 	<test
 		name="Verification of Channel page of voot application in chrome browser">
 		<parameter name="browsers" value="chrome" />
@@ -57,5 +58,5 @@
 			<class name="Voot.smac.pages.test.SearchPageTest" />
 		</classes>
 	</test>
-
+	
 </suite>

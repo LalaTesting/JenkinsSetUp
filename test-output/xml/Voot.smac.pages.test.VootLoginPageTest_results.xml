@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="5"
-           time="24.240">
+           time="24.075">
   <properties />
-            <testcase name="tearDown" time="0.000" classname="Voot.smac.pages.test.VootLoginPageTest">
+            <testcase name="tearDown" time="0.001" classname="Voot.smac.pages.test.VootLoginPageTest">
                 <failure type="java.lang.NullPointerException"
                   message="(null)"
               >
@@ -60,6 +60,6 @@
           <skipped />
     </testcase>
   
-            <testcase name="verifyLoginScreeen" time="24.240" classname="Voot.smac.pages.test.VootLoginPageTest" />
+            <testcase name="verifyLoginScreeen" time="24.073" classname="Voot.smac.pages.test.VootLoginPageTest" />
       
 </testsuite>

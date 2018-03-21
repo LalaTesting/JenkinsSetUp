@@ -74,7 +74,7 @@ public class BaseClass
 
 		else if (browsers.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"F:\\chromedriver_win32 (1)\\chromedriver_win32 (1)\\chromedriver.exe");
+					"E:\\for Android native app which used for testobject\\voot\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 

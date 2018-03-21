@@ -46,10 +46,14 @@ public class ClannelsPage extends Uielements
 	
 	
 	public void viewAlltheEChannelNamePresentinChannelsOverlay() throws InterruptedException{
+		
+		//to find the channels name added 2 xpath for channels
+		channelsmenu	=driver .findElement(By.id(channels_id));
+		function.mouseOverAction(driver, channelsmenu);
 		List<WebElement>listOfChannels=driver.findElements(By.xpath(channelsList_withNamexpath));
 		for(WebElement channelaname : listOfChannels){
 			System.out.println("Overlay with List of channels and channel name is ++++++++++::::::::::"   +channelaname.getText());
-			function.sleepMode(3000);
+			function.sleepMode(1000);
 		}
 		
 	}
@@ -64,7 +68,7 @@ public class ClannelsPage extends Uielements
 			{
 				channelaname.click();
 				System.out.println("Clicked on color Tamil channel ");
-				function.sleepMode(3000);
+				function.sleepMode(1000);
 				
 				
 			}
@@ -73,6 +77,11 @@ public class ClannelsPage extends Uielements
 	
 	public boolean verifyweatherUserisnavigatedToChannellandingPage() throws InterruptedException
 	{
+		//go to channel dropdown and mouse over and select tamil and click tamil then navigate to channels landing page and verify the tamil page 
+		clickedAnyChannelInChannelOverlay();
+		
+		function.sleepMode(1000);
+		
 		channelDeatilsPage=driver.findElement(By.xpath(channelslandingbreadcumbs_xpath));
 		function.highLighterMethod(driver, channelDeatilsPage);
 		System.out.println("User should be able to view -Bread crumbs(For ex: Home> Channels)  for navigation of channel landing page.");
