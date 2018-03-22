@@ -11,6 +11,7 @@ TestData data=new TestData();
 	
 	@Test(priority=1,description="Verify  whether login popup is displayed when user click on profile avatar in Homepage before logging in to application.")
 	public void verifyLoginScreeen() throws InterruptedException{
+		extentTest = extent.startTest(" Verify  whether login popup is displayed when user click on profile avatar in Homepage before logging in to application.");
 		Assert.assertTrue(loginpage.vootLogopreaset());
 		Assert.assertTrue(loginpage.verifyUseEmailMessage());
 		Assert.assertTrue(loginpage.verifyEmailAddressInputField());;
@@ -26,6 +27,7 @@ TestData data=new TestData();
 	
 	@Test(priority=2,description="Verification of Login PopUp in Voot Application")
 	public void EnterbankEmailidandverifyerrormessage() throws InterruptedException{
+		extentTest = extent.startTest("Verification of Login PopUp in Voot Application");
 	loginpage.verify_Error_message_without_EnteringEmail();
 	}
 	
@@ -33,6 +35,7 @@ TestData data=new TestData();
 	
 	@Test(priority=3,description="verify valid email id in Login PopUp in Voot Application")
 	public void enter_valid_Email_In_input_Text_field() throws InterruptedException{
+		extentTest = extent.startTest("verify valid email id in Login PopUp in Voot Application");
 		Assert.assertTrue(loginpage.enter_Emailid_Address_in_InputField(data.validemailId));;
 	}
 }

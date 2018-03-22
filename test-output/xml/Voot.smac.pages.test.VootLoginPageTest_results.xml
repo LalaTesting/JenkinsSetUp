@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Verification of vot login page of voot application in chrome    browser"
-           tests="7"
+           tests="5"
            failures="1"
            errors="0"
-           skipped="5"
-           time="24.075">
+           skipped="1"
+           time="27.276">
   <properties />
-            <testcase name="tearDown" time="0.001" classname="Voot.smac.pages.test.VootLoginPageTest">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="tearDown" time="0.000" classname="Voot.smac.pages.test.VootLoginPageTest">
+                <failure type="java.lang.IllegalArgumentException"
+                  message="wrong number of arguments"
               >
-<![CDATA[java.lang.NullPointerException
-  Voot.smac.pages.test.BaseClass.tearDown(BaseClass.java:122)
+<![CDATA[java.lang.IllegalArgumentException: wrong number of arguments
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -19,11 +18,9 @@
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
   org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
   org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
   org.testng.TestRunner.privateRun(TestRunner.java:744)
   org.testng.TestRunner.run(TestRunner.java:602)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
@@ -47,19 +44,9 @@
             <testcase name="endReport" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
           <skipped />
     </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
-          <skipped />
-    </testcase>
-            <testcase name="EnterbankEmailidandverifyerrormessage" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
-          <skipped />
-    </testcase>
-            <testcase name="enter_valid_Email_In_input_Text_field" time="0.0" classname="Voot.smac.pages.test.VootLoginPageTest">
-          <skipped />
-    </testcase>
   
-            <testcase name="verifyLoginScreeen" time="24.073" classname="Voot.smac.pages.test.VootLoginPageTest" />
+            <testcase name="EnterbankEmailidandverifyerrormessage" time="2.419" classname="Voot.smac.pages.test.VootLoginPageTest" />
+                <testcase name="verifyLoginScreeen" time="24.225" classname="Voot.smac.pages.test.VootLoginPageTest" />
+                <testcase name="enter_valid_Email_In_input_Text_field" time="0.632" classname="Voot.smac.pages.test.VootLoginPageTest" />
       
 </testsuite>

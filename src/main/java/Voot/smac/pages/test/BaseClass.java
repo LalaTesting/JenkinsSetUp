@@ -49,6 +49,7 @@ public class BaseClass
 	
 	
 	@BeforeClass
+	//@BeforeTest
 	public void setExtent(){
 		extent = new ExtentReports("E:\\for Android native app which used for testobject\\voot\\VootWebextentReports\\VootResult.html", false);
 		extent.addSystemInfo("Host Name", "vdc01dllap0284 ");
@@ -56,13 +57,10 @@ public class BaseClass
 		extent.addSystemInfo("Environment", "Voot QA");
 		
 	}
-@AfterTest
-	public void endReport(){
-		extent.flush();
-		extent.close();
-	}
+
 	@Parameters({ "browsers" })
 	@BeforeMethod
+	//@BeforeClass
 	public void setBrowsers(String browsers) {
 		if (browsers.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
@@ -105,6 +103,7 @@ public class BaseClass
 	
 	
 	@AfterMethod
+	//@AfterClass
 	public void tearDown(ITestResult result) throws IOException, InterruptedException{
 		
 	if(result.getStatus()==ITestResult.FAILURE){
@@ -128,10 +127,15 @@ public class BaseClass
 		functios.sleepMode(1000);
 		driver.quit();
 	}
+
+	
+@AfterTest
+public void endReport(){
+	extent.flush();
+	extent.close();
 }
-	
-	
-	
+}
+
 	
 /*	
 	@Parameters({ "browsers" })

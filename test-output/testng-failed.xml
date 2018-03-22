@@ -5,18 +5,19 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Verification of Channel page of voot application in chrome browser(failed)">
+  <test name="Verification off Search page of voot application in chrome browser(failed)">
     <parameter name="browsers" value="chrome"/>
     <classes>
-      <class name="Voot.smac.pages.test.ChannelsPageTest">
+      <class name="Voot.smac.pages.test.SearchPageTest">
         <methods>
+          <include name="verify_Close_Icon_In_SearchPage"/>
           <include name="setBrowsers"/>
+          <include name="enter_Some_Value_inSide_the_Text_Box_In_SearchPage"/>
           <include name="setExtent"/>
-          <include name="navigateToChannelDetailsPage"/>
           <include name="endReport"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Voot.smac.pages.test.ChannelsPageTest -->
+      </class> <!-- Voot.smac.pages.test.SearchPageTest -->
     </classes>
-  </test> <!-- Verification of Channel page of voot application in chrome browser(failed) -->
+  </test> <!-- Verification off Search page of voot application in chrome browser(failed) -->
 </suite> <!-- Failed suite [Parallel test suite] -->

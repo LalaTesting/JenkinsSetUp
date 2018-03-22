@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="23.599">
+           time="23.506">
   <properties />
   
   
-            <testcase name="verify_Search_Icon_In_HomePage" time="2.321" classname="Voot.smac.pages.test.SearchPageTest" />
-                <testcase name="verify_Search_Icon_In_SearchPage" time="2.809" classname="Voot.smac.pages.test.SearchPageTest" />
-                <testcase name="verify_Close_Icon_In_SearchPage" time="2.959" classname="Voot.smac.pages.test.SearchPageTest" />
-                <testcase name="verify_Search_Text_Box_In_SearchPage" time="0.294" classname="Voot.smac.pages.test.SearchPageTest" />
-                <testcase name="enter_Some_Value_inSide_the_Text_Box_In_SearchPage" time="15.216" classname="Voot.smac.pages.test.SearchPageTest" />
+            <testcase name="verify_Search_Text_Box_In_SearchPage" time="0.349" classname="Voot.smac.pages.test.SearchPageTest" />
+                <testcase name="verify_Search_Icon_In_HomePage" time="2.319" classname="Voot.smac.pages.test.SearchPageTest" />
+                <testcase name="verify_Close_Icon_In_SearchPage" time="2.628" classname="Voot.smac.pages.test.SearchPageTest" />
+                <testcase name="enter_Some_Value_inSide_the_Text_Box_In_SearchPage" time="15.156" classname="Voot.smac.pages.test.SearchPageTest" />
+                <testcase name="verify_Search_Icon_In_SearchPage" time="3.054" classname="Voot.smac.pages.test.SearchPageTest" />
       
 </testsuite>

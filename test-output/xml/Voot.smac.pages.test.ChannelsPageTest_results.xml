@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="50.910">
+           time="20.565">
   <properties />
   
   
-            <testcase name="mousehover_ChannelsInHeaderMenuOfHomepage" time="0.808" classname="Voot.smac.pages.test.ChannelsPageTest" />
-                <testcase name="OverlaywithListofchannels" time="40.178" classname="Voot.smac.pages.test.ChannelsPageTest" />
-                <testcase name="navigateToChannelDetailsPage" time="5.531" classname="Voot.smac.pages.test.ChannelsPageTest" />
-                <testcase name="Clickonanychannel" time="4.393" classname="Voot.smac.pages.test.ChannelsPageTest" />
+            <testcase name="OverlaywithListofchannels" time="14.098" classname="Voot.smac.pages.test.ChannelsPageTest" />
+                <testcase name="mousehover_ChannelsInHeaderMenuOfHomepage" time="0.778" classname="Voot.smac.pages.test.ChannelsPageTest" />
+                <testcase name="navigateToChannelDetailsPage" time="3.317" classname="Voot.smac.pages.test.ChannelsPageTest" />
+                <testcase name="Clickonanychannel" time="2.372" classname="Voot.smac.pages.test.ChannelsPageTest" />
       
 </testsuite>
