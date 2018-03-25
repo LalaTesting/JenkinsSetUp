@@ -38,12 +38,12 @@ public class GenericFunctions {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
-	public void scrollDown(WebDriver driver) throws InterruptedException {
+	/*public void scrollDown(WebDriver driver) throws InterruptedException {
 
 		 JavascriptExecutor jse = (JavascriptExecutor) driver;
 		    jse.executeScript("window.scrollBy(0,550)", "");
 
-
+*/
 	
 		{
 			/*for (int j = 0; j < 5; j++)
@@ -59,7 +59,7 @@ public class GenericFunctions {
 
 		// js.executeScript("window.scrollBy(0,250)", element);
 
-	}
+	
 
 	public void selectDropDownByIndex(WebElement element, int index) {
 

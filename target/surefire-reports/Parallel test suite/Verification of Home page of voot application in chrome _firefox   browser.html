@@ -1,0 +1,332 @@
+<html>
+<head>
+<title>TestNG:  Verification of Home page of voot application in chrome /firefox   browser</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Verification of Home page of voot application in chrome /firefox   browser</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/7</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 25 17:03:07 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>510 seconds (510115 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.setBrowsers()'><b>setBrowsers</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;VDC01DLLAP0284&apos;, ip: &apos;192.168.23.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\RAVIND~1.PAR\AppData\Local\Temp\rust_mozprofile.wYMW3WIQajLp, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=6.1, moz:processID=9816.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: f2f537a9-ee55-44d3-a3ed-f7e19eec6d71
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
+	at Voot.smac.pages.test.BaseClass.setBrowsers(BaseClass.java:77)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1294693736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1294693736'><pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;VDC01DLLAP0284&apos;, ip: &apos;192.168.23.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\RAVIND~1.PAR\AppData\Local\Temp\rust_mozprofile.wYMW3WIQajLp, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=6.1, moz:processID=9816.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: f2f537a9-ee55-44d3-a3ed-f7e19eec6d71
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
+	at Voot.smac.pages.test.BaseClass.setBrowsers(BaseClass.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.setBrowsers()'><b>setBrowsers</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.setBrowsers()'><b>setBrowsers</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.setBrowsers()'><b>setBrowsers</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.setBrowsers()'><b>setBrowsers</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.setBrowsers()'><b>setBrowsers</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.setBrowsers()'><b>setBrowsers</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.endReport()'><b>endReport</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifyChannelsmenuinHomepage()'><b>verifyChannelsmenuinHomepage</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: First level menu should contain following options.Channels<br/>
+<a href="#Output-1685771895" onClick='toggleBox("Output-1685771895", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1685771895" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1685771895">
+channls link is displaying and it is clickable in the portal<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifyVootLogoinHomePage()'><b>verifyVootLogoinHomePage</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: TC_HMP_003 :- Verify 'Voot' logo is displayed and alligned in the Homepage.<br/>
+<a href="#Output-1952270552" onClick='toggleBox("Output-1952270552", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1952270552" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1952270552">
+voot logo is present and it is displaying in the portal<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifykidsmenuinHomepage()'><b>verifykidsmenuinHomepage</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: First level menu should contain following options. Kids<br/>
+<a href="#Output-2052896633" onClick='toggleBox("Output-2052896633", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2052896633" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2052896633">
+kids link is displaying and it is clickable in the portal<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifynewshowLinkinHomePage()'><b>verifynewshowLinkinHomePage</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: TC_HMP_003:- First level menu should contain following options.New Shows<br/>
+<a href="#Output-1820899240" onClick='toggleBox("Output-1820899240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1820899240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1820899240">
+showName and it is displaying & RISING STAR S02 is clickable in the portal<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifyshowsmenuinHomepage()'><b>verifyshowsmenuinHomepage</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: First level menu should contain following options.1.Shows<br/>
+<a href="#Output-1227616260" onClick='toggleBox("Output-1227616260", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1227616260" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1227616260">
+showsNameinshowmenu showsNameinshowmenu it is displaying & clickable in the portal<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.clickOnTheNextButtonOnCoursoual()'><b>clickOnTheNextButtonOnCoursoual</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: Verify 'Next'  buttons on thumbnai</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.clickOnThePreviousButtonOnCoursoual()'><b>clickOnThePreviousButtonOnCoursoual</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: Verify 'Previous' buttons on  the main carousal  thumbnail </td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifyAddBannerSectionl()'><b>verifyAddBannerSectionl</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: verify weather User is able to see add banner in home page</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifyDescriptionTextValueOFMasterCarousal()'><b>verifyDescriptionTextValueOFMasterCarousal</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: verify weather User is able to see courasual description text Value</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifyMoviesmenuinHomepage()'><b>verifyMoviesmenuinHomepage</b><br>Test class: Voot.smac.pages.test.HomePageTest<br>Test method: First level menu should contain following options.Channels 4.Movies</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifySearchinHomepage()'><b>verifySearchinHomepage</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+<tr>
+<td title='Voot.smac.pages.test.HomePageTest.verifyuserloginiconinHomepage()'><b>verifyuserloginiconinHomepage</b><br>Test class: Voot.smac.pages.test.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>Voot.smac.pages.test.HomePageTest@d8355a8</td></tr>
+</table><p>
+</body>
+</html>

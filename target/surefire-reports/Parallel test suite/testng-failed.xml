@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Parallel test suite]">
-  <parameter name="browsers" value="firefox"/>
+<suite verbose="0" name="Failed suite [Parallel test suite]" parallel="tests">
+  <parameter name="browsers" value="chrome"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Verification of Home page of voot application in chrome    browser(failed)">
+  <test name="Verification of Home page of voot application in chrome /firefox   browser(failed)" parallel="tests">
     <parameter name="browsers" value="firefox"/>
     <classes>
+      <class name="Voot.smac.pages.test.ShowPagesTest">
+        <methods>
+          <include name="setBrowsers"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Voot.smac.pages.test.ShowPagesTest -->
       <class name="Voot.smac.pages.test.HomePageTest">
         <methods>
           <include name="verifySearchinHomepage"/>
           <include name="setBrowsers"/>
           <include name="verifyMoviesmenuinHomepage"/>
-          <include name="verifyshowsmenuinHomepage"/>
           <include name="verifyuserloginiconinHomepage"/>
           <include name="verifyDescriptionTextValueOFMasterCarousal"/>
           <include name="setExtent"/>
-          <include name="verifyChannelsmenuinHomepage"/>
-          <include name="clickOnThePreviousButtonOnCoursoual"/>
-          <include name="verifynewshowLinkinHomePage"/>
-          <include name="verifyAddBannerSectionl"/>
-          <include name="verifykidsmenuinHomepage"/>
+          <include name="tearDown"/>
           <include name="clickOnTheNextButtonOnCoursoual"/>
-          <include name="verifyVootLogoinHomePage"/>
+          <include name="clickOnThePreviousButtonOnCoursoual"/>
+          <include name="verifyAddBannerSectionl"/>
         </methods>
       </class> <!-- Voot.smac.pages.test.HomePageTest -->
     </classes>
-  </test> <!-- Verification of Home page of voot application in chrome    browser(failed) -->
+  </test> <!-- Verification of Home page of voot application in chrome /firefox   browser(failed) -->
 </suite> <!-- Failed suite [Parallel test suite] -->
