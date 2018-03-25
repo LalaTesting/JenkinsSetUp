@@ -2,23 +2,25 @@ package Voot.smac.pages.test;
 
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 
 public class HomePageTest extends BaseClass {
 
 @Test(priority = 1, description = "TC_HMP_003 :- Verify 'Voot' logo is displayed and alligned in the Homepage.")
 	public void verifyVootLogoinHomePage() throws InterruptedException {
-	extentTest = extent.startTest("Verify 'Voot' logo is displayed and alligned in the Homepage.");
+	extentTest = extent.startTest("First level menu should contain following options.New Shows");
 	homepage.vootLogo();
+	
+	
 	}
 
 	@Test(priority = 2,description = "TC_HMP_003:- First level menu should contain following options.New Shows")
 	public void verifynewshowLinkinHomePage() throws InterruptedException {
 		extentTest = extent.startTest("First level menu should contain following options.New Shows");
+		//extentTest.log(LogStatus.INFO, "This step shows usage of log(logStatus, details)");
 		homepage.verifynewshow();
+		
 	}
 
 	@Test(priority = 3, groups = "Verification of Header Menu", description = "First level menu should contain following options.1.Shows")

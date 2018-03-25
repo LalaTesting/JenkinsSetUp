@@ -68,9 +68,7 @@ public class Uielements
 	public static String searchiconxpathforMotuPatlu="//div[@class='VSearchHomeContentWrap']//div[@id='Motu-Patlu-S01']";
 	public static String serchIconinsearchBoxXpath="//label[@class='VSearchHomeSearchIcon']";
 	public static String closeIconinsearchPage="//div[@class='VSearchHomeClose']";
-	
 	public static String SearchTextBox_id="VSearchHome1";
-	
 	public static  String Searchresult_id="Motu-Patlu-S01";
 	
 	

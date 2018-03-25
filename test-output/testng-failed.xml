@@ -5,19 +5,29 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Verification off Search page of voot application in chrome browser(failed)">
-    <parameter name="browsers" value="chrome"/>
+  <test name="Verification of Home page of voot application in chrome    browser(failed)">
+    <parameter name="browsers" value="firefox"/>
     <classes>
-      <class name="Voot.smac.pages.test.SearchPageTest">
+      <class name="Voot.smac.pages.test.HomePageTest">
         <methods>
-          <include name="verify_Close_Icon_In_SearchPage"/>
+          <include name="verifySearchinHomepage"/>
           <include name="setBrowsers"/>
-          <include name="enter_Some_Value_inSide_the_Text_Box_In_SearchPage"/>
+          <include name="verifyMoviesmenuinHomepage"/>
+          <include name="verifyshowsmenuinHomepage"/>
+          <include name="verifyuserloginiconinHomepage"/>
+          <include name="verifyDescriptionTextValueOFMasterCarousal"/>
           <include name="setExtent"/>
+          <include name="verifyChannelsmenuinHomepage"/>
+          <include name="clickOnThePreviousButtonOnCoursoual"/>
+          <include name="verifynewshowLinkinHomePage"/>
+          <include name="verifyAddBannerSectionl"/>
           <include name="endReport"/>
+          <include name="verifykidsmenuinHomepage"/>
           <include name="tearDown"/>
+          <include name="clickOnTheNextButtonOnCoursoual"/>
+          <include name="verifyVootLogoinHomePage"/>
         </methods>
-      </class> <!-- Voot.smac.pages.test.SearchPageTest -->
+      </class> <!-- Voot.smac.pages.test.HomePageTest -->
     </classes>
-  </test> <!-- Verification off Search page of voot application in chrome browser(failed) -->
+  </test> <!-- Verification of Home page of voot application in chrome    browser(failed) -->
 </suite> <!-- Failed suite [Parallel test suite] -->

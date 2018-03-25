@@ -7,13 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -61,19 +58,21 @@ public class BaseClass
 	@Parameters({ "browsers" })
 	@BeforeMethod
 	//@BeforeClass
-	public void setBrowsers(String browsers) {
+	public void setBrowsers(String browsers)
+	{
 		if (browsers.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
-					"C:\\Users\\ravindra.parauha\\Downloads\\geckodriver-v0.19.1-win64\\geckodriver.exe");
+					"E:\\chromeDriver\\geckodriver-v0.15.0-win64");
 			driver = new FirefoxDriver();
 			
-			
+	
 		}
 
 		else if (browsers.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					"E:\\for Android native app which used for testobject\\voot\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
+			
 		}
 
 		driver.get("https://alpha.voot.com/");
@@ -125,10 +124,10 @@ public class BaseClass
 		
 		extent.endTest(extentTest); //ending test and ends the current test and prepare to create html report
 		functios.sleepMode(1000);
+
 		driver.quit();
 	}
 
-	
 @AfterTest
 public void endReport(){
 	extent.flush();
