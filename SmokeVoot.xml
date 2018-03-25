@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel test suite">
+<suite name="Parallel test suite" parallel="tests">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 
 	<test
-		name="Verification of Home page of voot application in chrome 
+		name="Verification of Home page of voot application in chrome /firefox
 		browser">
 		<parameter name="browsers" value="firefox" />
 		<classes>
 			<class name="Voot.smac.pages.test.HomePageTest" />
 		</classes>
 	</test>
-<!--
+
 	<test name="Verification of Show page of voot application in chrome browser">
 		<parameter name="browsers" value="chrome" />
 		<classes>
@@ -22,7 +22,7 @@
 		</classes>
 	</test>
 	
-
+<!--
 	<test
 		name="Verification of vot login page of voot application in chrome 
 		browser">

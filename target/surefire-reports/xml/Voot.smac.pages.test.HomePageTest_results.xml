@@ -4,49 +4,20 @@
            failures="1"
            errors="0"
            skipped="36"
-           time="0.005">
+           time="0.007">
   <properties />
             <testcase name="setBrowsers" time="0.000" classname="Voot.smac.pages.test.HomePageTest">
-                <failure type="org.openqa.selenium.WebDriverException"
-                  message="Process unexpectedly closed with status 0
-Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
-System info: host: &apos;VDC01DLLAP0284&apos;, ip: &apos;192.168.23.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: "
+                <failure type="java.lang.IllegalStateException"
+                  message="The driver executable is a directory: E:\chromeDriver\geckodriver-v0.15.0-win64"
               >
-<![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
-Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
-System info: host: 'VDC01DLLAP0284', ip: '192.168.23.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-  org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-  org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$100/348055829.apply(Unknown Source)
-  org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-  org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$102/137275020.apply(Unknown Source)
-  org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:360)
-  org.openqa.selenium.remote.ProtocolHandshake$$Lambda$103/1508181426.apply(Unknown Source)
-  java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-  java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-  java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-  java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:529)
-  java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:516)
-  java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502)
-  java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-  java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-  java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:363)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:137)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:254)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+<![CDATA[java.lang.IllegalStateException: The driver executable is a directory: E:\chromeDriver\geckodriver-v0.15.0-win64
+  com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+  org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:138)
+  org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+  org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+  org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+  org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+  org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
   org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
   org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
   Voot.smac.pages.test.BaseClass.setBrowsers(BaseClass.java:66)
@@ -90,15 +61,6 @@ remote stacktrace:
             <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
             <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
@@ -109,6 +71,45 @@ remote stacktrace:
           <skipped />
     </testcase>
             <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
             <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
@@ -126,70 +127,40 @@ remote stacktrace:
             <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyshowsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
             <testcase name="verifyVootLogoinHomePage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifySearchinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyAddBannerSectionl" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifykidsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyChannelsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyDescriptionTextValueOFMasterCarousal" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifynewshowLinkinHomePage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="clickOnTheNextButtonOnCoursoual" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
             <testcase name="verifyuserloginiconinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
+            <testcase name="verifyDescriptionTextValueOFMasterCarousal" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifyChannelsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
             <testcase name="verifyMoviesmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
+            <testcase name="clickOnTheNextButtonOnCoursoual" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
             <testcase name="clickOnThePreviousButtonOnCoursoual" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifyAddBannerSectionl" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifynewshowLinkinHomePage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifykidsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifyshowsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+          <skipped />
+    </testcase>
+            <testcase name="verifySearchinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
   

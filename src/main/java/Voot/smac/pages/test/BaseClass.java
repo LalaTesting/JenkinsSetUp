@@ -61,8 +61,7 @@ public class BaseClass
 	public void setBrowsers(String browsers)
 	{
 		if (browsers.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					"E:\\chromeDriver\\geckodriver-v0.15.0-win64");
+			System.setProperty("webdriver.gecko.driver","E:\\chromeDriver\\geckodriver-v0.15.0-win64\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			
 	

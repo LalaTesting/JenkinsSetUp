@@ -12,7 +12,7 @@
 <body>
 <h1>Verification of Home page of voot application in chrome    browser</h1>
 <p>
-  Test duration: 0.742s
+  Test duration: 0.754s
 </p>
 
   <table class="resultsTable configTable">
@@ -34,40 +34,15 @@
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0<br/>
-Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;<br/>
-System info: host: &apos;VDC01DLLAP0284&apos;, ip: &apos;192.168.23.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;<br/>
-Driver info: driver.version: FirefoxDriver<br/>
-remote stacktrace: </b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalStateException: The driver executable is a directory: E:\chromeDriver\geckodriver-v0.15.0-win64</b></a><br />
     <div class="stackTrace" id="exception-0">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br />
-              org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)<br />
-              org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$100/348055829.apply(Unknown Source)<br />
-              org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)<br />
-              org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$102/137275020.apply(Unknown Source)<br />
-              org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:360)<br />
-              org.openqa.selenium.remote.ProtocolHandshake$$Lambda$103/1508181426.apply(Unknown Source)<br />
-              java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)<br />
-              java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)<br />
-              java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)<br />
-              java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:529)<br />
-              java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:516)<br />
-              java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502)<br />
-              java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)<br />
-              java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)<br />
-              java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)<br />
-              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:363)<br />
-              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:137)<br />
-              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)<br />
-              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:254)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)<br />
-              org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)<br />
+              com.google.common.base.Preconditions.checkState(Preconditions.java:534)<br />
+              org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:138)<br />
+              org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)<br />
+              org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)<br />
+              org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)<br />
+              org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)<br />
+              org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)<br />
               org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)<br />
               org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)<br />
               Voot.smac.pages.test.BaseClass.setBrowsers(BaseClass.java:66)<br />
@@ -461,7 +436,7 @@ remote stacktrace: </b></a><br />
                   <span class="description" title="Verify 'Next'  buttons on thumbnai">clickOnTheNextButtonOnCoursoual</span>
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
                                
@@ -475,7 +450,7 @@ remote stacktrace: </b></a><br />
                   <span class="description" title="Verify 'Previous' buttons on  the main carousal  thumbnail ">clickOnThePreviousButtonOnCoursoual</span>
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
                                
@@ -503,7 +478,7 @@ remote stacktrace: </b></a><br />
                   <span class="description" title="First level menu should contain following options.Channels">verifyChannelsmenuinHomepage</span>
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
                                
@@ -517,7 +492,7 @@ remote stacktrace: </b></a><br />
                   <span class="description" title="verify weather User is able to see courasual description text Value">verifyDescriptionTextValueOFMasterCarousal</span>
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
                                
@@ -545,7 +520,7 @@ remote stacktrace: </b></a><br />
                   verifySearchinHomepage
       </td>
   <td class="duration">
-    0.001s
+    0.000s
   </td>
   <td class="result">
                                
@@ -559,7 +534,7 @@ remote stacktrace: </b></a><br />
                   <span class="description" title="TC_HMP_003 :- Verify 'Voot' logo is displayed and alligned in the Homepage.">verifyVootLogoinHomePage</span>
       </td>
   <td class="duration">
-    0.004s
+    0.001s
   </td>
   <td class="result">
                                
@@ -573,7 +548,7 @@ remote stacktrace: </b></a><br />
                   <span class="description" title="First level menu should contain following options. Kids">verifykidsmenuinHomepage</span>
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
                                
@@ -601,7 +576,7 @@ remote stacktrace: </b></a><br />
                   <span class="description" title="First level menu should contain following options.1.Shows">verifyshowsmenuinHomepage</span>
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
                                

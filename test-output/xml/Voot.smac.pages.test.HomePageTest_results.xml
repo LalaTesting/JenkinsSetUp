@@ -1,55 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Verification of Home page of voot application in chrome    browser"
-           tests="25"
+<testsuite name="Verification of Home page of voot application in chrome /firefox   browser"
+           tests="22"
            failures="1"
            errors="0"
-           skipped="24"
-           time="18.175">
+           skipped="18"
+           time="115.582">
   <properties />
-            <testcase name="setBrowsers" time="18.175" classname="Voot.smac.pages.test.HomePageTest">
+            <testcase name="setBrowsers" time="112.659" classname="Voot.smac.pages.test.HomePageTest">
                 <failure type="org.openqa.selenium.WebDriverException"
-                  message="Process unexpectedly closed with status 0
+                  message="Failed to decode response from marionette
 Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
 System info: host: &apos;VDC01DLLAP0284&apos;, ip: &apos;192.168.23.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: "
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\RAVIND~1.PAR\AppData\Local\Temp\rust_mozprofile.qP6aguhSfV01, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=6.1, moz:processID=1360.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 4e25b7f7-6968-4978-986c-b4a96785e2e0"
               >
-<![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+<![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
 System info: host: 'VDC01DLLAP0284', ip: '192.168.23.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\RAVIND~1.PAR\AppData\Local\Temp\rust_mozprofile.qP6aguhSfV01, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=6.1, moz:processID=1360.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
+Session ID: 4e25b7f7-6968-4978-986c-b4a96785e2e0
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
   java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-  org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-  org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$100/1388563249.apply(Unknown Source)
-  org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-  org.openqa.selenium.remote.W3CHandshakeResponse$$Lambda$102/1402215471.apply(Unknown Source)
-  org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:360)
-  org.openqa.selenium.remote.ProtocolHandshake$$Lambda$103/1839962989.apply(Unknown Source)
-  java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-  java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-  java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-  java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:529)
-  java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:516)
-  java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502)
-  java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-  java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-  java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:363)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:137)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:254)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
-  Voot.smac.pages.test.BaseClass.setBrowsers(BaseClass.java:66)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
+  Voot.smac.pages.test.BaseClass.setBrowsers(BaseClass.java:77)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,32 +48,18 @@ remote stacktrace:
   org.testng.TestRunner.privateRun(TestRunner.java:744)
   org.testng.TestRunner.run(TestRunner.java:602)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-  org.testng.SuiteRunner.run(SuiteRunner.java:289)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-  org.testng.TestNG.runSuites(TestNG.java:1144)
-  org.testng.TestNG.run(TestNG.java:1115)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
 ]]>
       </failure>
 
           </testcase>
   
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
             <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
@@ -121,31 +90,22 @@ remote stacktrace:
             <testcase name="verifyDescriptionTextValueOFMasterCarousal" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
-            <testcase name="verifyuserloginiconinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+            <testcase name="verifySearchinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
-            <testcase name="verifySearchinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+            <testcase name="verifyuserloginiconinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
             <testcase name="clickOnThePreviousButtonOnCoursoual" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
-            <testcase name="verifyAddBannerSectionl" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+            <testcase name="verifyMoviesmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
             <testcase name="verifyChannelsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
-            <testcase name="verifyMoviesmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifynewshowLinkinHomePage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyVootLogoinHomePage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyshowsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
+            <testcase name="verifyAddBannerSectionl" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
           <skipped />
     </testcase>
             <testcase name="verifykidsmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
@@ -155,5 +115,8 @@ remote stacktrace:
           <skipped />
     </testcase>
   
-  
+            <testcase name="verifynewshowLinkinHomePage" time="1.062" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyVootLogoinHomePage" time="0.927" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyshowsmenuinHomepage" time="0.934" classname="Voot.smac.pages.test.HomePageTest" />
+      
 </testsuite>
