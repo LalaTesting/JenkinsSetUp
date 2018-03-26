@@ -149,7 +149,7 @@ public static String getScreenshot(WebDriver driver, String screenshotName) thro
 	File source = ts.getScreenshotAs(OutputType.FILE);
 	// after execution, you could see a folder "FailedTestsScreenshots"
 	// under src folder
-	String destination = "E:\\for Android native app which used for testobject\\voot\\VootScreenShot "+ screenshotName + dateName
+	String destination = "E:\\for Android native app which used for testobject\\voot\\VootScreenShot"+ screenshotName + dateName
 			+ ".png";
 	File finalDestination = new File(destination);
 	FileUtils.copyFile(source, finalDestination);

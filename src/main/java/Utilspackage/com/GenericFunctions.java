@@ -133,10 +133,10 @@ public void scrollDownFromTopOfPage(WebDriver driver) throws InterruptedExceptio
 public void scrolltoptobottomafterclickonthefirstTray(WebDriver driver ) throws InterruptedException {
 	JavascriptExecutor jse = (JavascriptExecutor)driver;
 	for (int second = 0; ; second++) {
-	        if(second >=10){
+	        if(second >=6){
 	            break;
 	        }
-	            jse.executeScript("window.scrollBy(0,600)", ""); //y value '800' can be altered
+	            jse.executeScript("window.scrollBy(0,300)", ""); //y value '800' can be altered
 	            Thread.sleep(2000);
 	}
 
@@ -145,10 +145,10 @@ public void scrolltoptobottomafterclickonthefirstTray(WebDriver driver ) throws 
 public void scrollbottomToTopafterclickonthefirstTray(WebDriver driver ) throws InterruptedException {
 	JavascriptExecutor jse = (JavascriptExecutor)driver;
 	for (int second = 0; ; second++) {
-	        if(second >=10){
+	        if(second >=6){
 	            break;
 	        }
-	            jse.executeScript("window.scrollBy(0,-600)", ""); //y value '800' can be altered
+	            jse.executeScript("window.scrollBy(0,-300)", ""); //y value '800' can be altered
 	            Thread.sleep(2000);
 	}
 }
