@@ -57,6 +57,21 @@ public class VootLoginPage extends Uielements {
 		} else
 			return false;
 	}
+	
+	public boolean enterwithoutInputverifyEmailAddressInputField(String blankinput) throws InterruptedException {
+
+		inputEmail = driver.findElement(By.xpath(EmailField_xpath));
+		functions.highLighterMethod(driver, inputEmail);
+	
+		if (inputEmail.isDisplayed()) {
+			System.out.println("Email input Text field is displaying on the login popup and not providing any value");
+			inputEmail.sendKeys(blankinput);
+			 driver.findElement(By.xpath(rigisterButton_xpath)).click();
+			
+			return true;
+		} else
+			return false;
+	}
 
 	public boolean enter_Emailid_Address_in_InputField(String EmailId) throws InterruptedException {
 
@@ -65,6 +80,8 @@ public class VootLoginPage extends Uielements {
 		if (inputEmail.isDisplayed()) {
 			inputEmail.sendKeys(EmailId);
 			System.out.println("User has given Email is:::::::::::::::" + EmailId);
+			 driver.findElement(By.xpath(rigisterButton_xpath)).click();
+			 functions.sleepMode(2000);
 			return true;
 		} else
 			return false;
@@ -117,7 +134,7 @@ public class VootLoginPage extends Uielements {
 		String TextValueofLoginwith = loginwith.getText();
 		if (loginwith.isDisplayed()) {
 			functions.sleepMode(2000);
-			System.out.println("Login with text message is displaying on the login page and Text value is :::::::::::" + TextValueofLoginwith);
+			System.out.println(" (Login with) text message is displaying on the login page and Text value is :::::::::::" + TextValueofLoginwith);
 			Assert.assertEquals(TextValueofLoginwith, appdata.LoginWithTextValue);
 			return true;
 		} else
@@ -164,9 +181,9 @@ public class VootLoginPage extends Uielements {
 	
     public void verify_Error_message_without_EnteringEmail() throws InterruptedException
     {
-    	vootLogopreaset();
+ /*	vootLogopreaset();
     	inputEmail.sendKeys();
-    	registerbutton.click();
+    	registerbutton.click(); */
     	errormessage=driver.findElement(By.xpath(emailErrormessage));
     	String errorTextValue=errormessage.getText();
     	functions.highLighterMethod(driver, errormessage);

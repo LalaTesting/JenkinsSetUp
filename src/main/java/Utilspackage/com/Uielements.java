@@ -40,10 +40,9 @@ public class Uielements
 	public static String foarwordButtoncarausal="//button[text()='Next']";
 	public static String dotsxpathincarosual="//ul[@class='slick-dots']/li";
 	public static String adbannerxpath="//div[@class='adbannerWrapper']";
-	
 	public static String playanyvideofromcarasol="//div[@class='mainCaroselContainer']//div[@class='slick-initialized slick-slider mainSlider_ VContainer']";
-	
-	public static String More_button_mostwatchshow_xpath="//a[@href='/listing/shows-1/?&cId=333478&trayLayout=showsPoster&moduleType=mediaLargeWtLbl&rowId=1623']";
+	public static String More_button_firstTray_xpath="//div[@class='VmediaLargeWithLabel']/preceding::div[@class='VtitleContainer']//div/a";
+	public static String firstTray_xptah="//h2[@class='VSingletrayTitle']";
 	
 
 	

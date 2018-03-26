@@ -104,7 +104,7 @@ public class GenericFunctions {
 
 		}
 	}
-
+//this is for home page scrolling till down and up
 	public void scroll_top_to_bottom(WebDriver driver ) throws InterruptedException {
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		for (int second = 0; ; second++) {
@@ -116,6 +116,8 @@ public class GenericFunctions {
 		}
 
 	}
+	
+	//this is for page up from down to up
 public void scrollDownFromTopOfPage(WebDriver driver) throws InterruptedException {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	for (int second = 0; ; second++) {
@@ -128,13 +130,29 @@ public void scrollDownFromTopOfPage(WebDriver driver) throws InterruptedExceptio
 	}
 
      }
+public void scrolltoptobottomafterclickonthefirstTray(WebDriver driver ) throws InterruptedException {
+	JavascriptExecutor jse = (JavascriptExecutor)driver;
+	for (int second = 0; ; second++) {
+	        if(second >=10){
+	            break;
+	        }
+	            jse.executeScript("window.scrollBy(0,600)", ""); //y value '800' can be altered
+	            Thread.sleep(2000);
+	}
+
 }
-     /*  public static void captureScreenShot(WebDriver driver)
-                 {
-                       File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-             
-            	         FileUtils.copyFile (src, new File("E:\\for Android native app which used for testobject\\voot\\VootScreenShot.png"));
-                    }
-       }*/
+
+public void scrollbottomToTopafterclickonthefirstTray(WebDriver driver ) throws InterruptedException {
+	JavascriptExecutor jse = (JavascriptExecutor)driver;
+	for (int second = 0; ; second++) {
+	        if(second >=10){
+	            break;
+	        }
+	            jse.executeScript("window.scrollBy(0,-600)", ""); //y value '800' can be altered
+	            Thread.sleep(2000);
+	}
+}
+}
+
 
   

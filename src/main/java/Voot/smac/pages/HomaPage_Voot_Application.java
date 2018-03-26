@@ -18,7 +18,8 @@ public class HomaPage_Voot_Application extends Uielements {
 
 	WebDriver driver;
 	WebElement vootlogo, newShow, showdrop_down, Kidsdrop_down, channeldrop_down, Moviesdrop_down, searchIcon,
-			dotbutton, clickingonthe5dots, UserLoginIcon, NextButton, backButton, adbanner_body,masterCoroselDescription,playanycarosuoul;
+			dotbutton, clickingonthe5dots, UserLoginIcon, NextButton, backButton, adbanner_body,masterCoroselDescription,
+			playanycarosuoul,morebuttton,firstTrayName;
 	GenericFunctions function = new GenericFunctions(driver);
 
 	public HomaPage_Voot_Application(WebDriver driver) {
@@ -164,9 +165,8 @@ function.highLighterMethod(driver, NextButton);
 		playanycarosuoul=driver.findElement(By.xpath(playanyvideofromcarasol));
 		
 		playanycarosuoul.click();
-		function.sleepMode(3000);
     	System.out.println(driver.getCurrentUrl());
-		function.sleepMode(5000);
+		function.sleepMode(10000);
 		System.out.println(driver.getTitle());
 		
 	}
@@ -217,5 +217,39 @@ function.highLighterMethod(driver, NextButton);
 			return true;
 		} else
 			return false;
+	}
+	
+	public boolean verifyMoreButtonfirstTray() throws InterruptedException{
+		morebuttton=driver.findElement(By.xpath(More_button_firstTray_xpath));
+		function.highLighterMethod(driver, morebuttton);
+		if(morebuttton.isDisplayed()){
+			System.out.println("More button is displaying on the first tray  in home page");
+			morebuttton.click();
+			String morebuttonURL=driver.getCurrentUrl();
+			System.out.println("after click on the more button application URL is:-+++++++++"+morebuttonURL);
+			
+			return true;	
+		}
+		else {
+			return false;
+		}
+	}
+		public boolean verifyafterClickonMoreButtonTrayName() throws InterruptedException{
+			firstTrayName=driver.findElement(By.xpath(firstTray_xptah));
+			function.highLighterMethod(driver, firstTrayName);
+			if(firstTrayName.isDisplayed()){
+				System.out.println("first tray  Name is ");
+				String trayNameis=firstTrayName.getText();
+				System.out.println("first tray name is :-+++++++++"+trayNameis);
+				function.scrolltoptobottomafterclickonthefirstTray(driver);
+				System.out.println("scrolling top to buttom");
+				function.sleepMode(3000);
+				function.scrollbottomToTopafterclickonthefirstTray(driver);
+				System.out.println("scrolling buttom to top");
+				return true;	
+			}
+			else {
+				return false;
+			}
 	}
 }

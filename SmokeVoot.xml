@@ -9,7 +9,7 @@
 	<test
 		name="Verification of Home page of voot application in chrome /firefox
 		browser">
-		<parameter name="browsers" value="firefox" />
+		<parameter name="browsers" value="chrome" />
 		<classes>
 			<class name="Voot.smac.pages.test.HomePageTest" />
 		</classes>
@@ -21,12 +21,11 @@
 			<class name="Voot.smac.pages.test.ShowPagesTest" />
 		</classes>
 	</test>
-	
-<!--
+
+
 	<test
-		name="Verification of vot login page of voot application in chrome 
-		browser">
-		<parameter name="browsers" value="chrome" />
+		name="Verification of voot login page  firefox browser">
+		<parameter name="browsers" value="firefox" />
 		<classes>
 			<class name="Voot.smac.pages.test.VootLoginPageTest" />
 
@@ -59,5 +58,5 @@
 		</classes>
 	
 	</test>
-		  -->
+
 </suite>

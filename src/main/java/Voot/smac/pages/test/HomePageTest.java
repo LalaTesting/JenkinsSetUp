@@ -85,4 +85,13 @@ public class HomePageTest extends BaseClass {
 		extentTest = extent.startTest("Verify 'Previous' buttons on  main carousal  thumbnail");
 		homepage.clickonbackButtonOnCarosual();
 	}
+ @Test(priority = 13, description ="click on the 'more ' buttons on the HomePage and navigate to show details page and verify the show name ")
+	public void verifyMoreButtonInHomePage ()throws InterruptedException {
+		extentTest = extent.startTest("click on the 'more ' buttons on the HomePage and navigate to show details page and verify the show name and scrolling page down and up ");
+		homepage.verifyMoreButtonfirstTray();
+		homepage.verifyafterClickonMoreButtonTrayName();
+	
+	}
+
+ 
 }

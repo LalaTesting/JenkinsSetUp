@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="83.077">
+           time="87.310">
   <properties />
   
   
-            <testcase name="verifyPopularHindiMoviesValue" time="17.773" classname="Voot.smac.pages.test.MoviesPageTest" />
-                <testcase name="verifyPopularBangaliMoviesValue" time="18.448" classname="Voot.smac.pages.test.MoviesPageTest" />
-                <testcase name="verifyPopularKidsMoviesValue" time="17.570" classname="Voot.smac.pages.test.MoviesPageTest" />
-                <testcase name="mousehoveronMoviesintheheaderandverify" time="11.744" classname="Voot.smac.pages.test.MoviesPageTest" />
-                <testcase name="verifyPopularkannadaMoviesValue" time="17.542" classname="Voot.smac.pages.test.MoviesPageTest" />
+            <testcase name="verifyPopularkannadaMoviesValue" time="20.075" classname="Voot.smac.pages.test.MoviesPageTest" />
+                <testcase name="verifyPopularKidsMoviesValue" time="18.158" classname="Voot.smac.pages.test.MoviesPageTest" />
+                <testcase name="verifyPopularBangaliMoviesValue" time="18.144" classname="Voot.smac.pages.test.MoviesPageTest" />
+                <testcase name="verifyPopularHindiMoviesValue" time="18.685" classname="Voot.smac.pages.test.MoviesPageTest" />
+                <testcase name="mousehoveronMoviesintheheaderandverify" time="12.248" classname="Voot.smac.pages.test.MoviesPageTest" />
       
 </testsuite>

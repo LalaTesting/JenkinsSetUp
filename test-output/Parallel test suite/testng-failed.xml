@@ -12,17 +12,15 @@
         <methods>
           <include name="verifySearchinHomepage"/>
           <include name="setBrowsers"/>
-          <include name="verifyMoviesmenuinHomepage"/>
+          <include name="verifyMoreButtonInHomePage"/>
           <include name="verifyuserloginiconinHomepage"/>
           <include name="verifyDescriptionTextValueOFMasterCarousal"/>
           <include name="setExtent"/>
-          <include name="verifyChannelsmenuinHomepage"/>
-          <include name="clickOnThePreviousButtonOnCoursoual"/>
-          <include name="verifyAddBannerSectionl"/>
           <include name="endReport"/>
-          <include name="verifykidsmenuinHomepage"/>
           <include name="tearDown"/>
           <include name="clickOnTheNextButtonOnCoursoual"/>
+          <include name="clickOnThePreviousButtonOnCoursoual"/>
+          <include name="verifyAddBannerSectionl"/>
         </methods>
       </class> <!-- Voot.smac.pages.test.HomePageTest -->
     </classes>
