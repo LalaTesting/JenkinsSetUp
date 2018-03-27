@@ -1,6 +1,7 @@
 package Voot.smac.pages.test;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import Utilspackage.com.TestData;
@@ -11,8 +12,9 @@ TestData data=new TestData();
 	
 	@Test(priority=1,description="Verify  whether login popup is displayed when user click on profile avatar in Homepage before logging in to application.")
 	public void verifyLoginScreeen() throws InterruptedException{
-		extentTest = extent.startTest(" Verify  whether login popup is displayed when user click on profile avatar in Homepage before logging in to application.");
+		extentTest = extent.startTest(" Verify  whether login popup is displaying with all the content  when user click on profile avatar in Homepage before logging in to application.");
 		Assert.assertTrue(loginpage.vootLogopreaset());
+		Reporter.log("Voot login icon is present",true);
 		Assert.assertTrue(loginpage.verifyUseEmailMessage());
 		Assert.assertTrue(loginpage.verifyEmailAddressInputField());;
 		Assert.assertTrue(loginpage.verifyRegesterButtonOnLoginPage());

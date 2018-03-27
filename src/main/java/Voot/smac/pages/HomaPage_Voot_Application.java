@@ -165,9 +165,9 @@ function.highLighterMethod(driver, NextButton);
 		playanycarosuoul=driver.findElement(By.xpath(playanyvideofromcarasol));
 		
 		playanycarosuoul.click();
-    	System.out.println(driver.getCurrentUrl());
+    	System.out.println("User has Played this Video & URL is:::::::::::::::::"+driver.getCurrentUrl());
 		function.sleepMode(10000);
-		System.out.println(driver.getTitle());
+		System.out.println("Video Title  is:::::::::::::::::"+driver.getTitle());
 		
 	}
 	/*List<WebElement>masterCoroselDescription	 = driver.findElements(By.xpath("//div[@class='details']//h6"));
@@ -198,12 +198,13 @@ function.highLighterMethod(driver, NextButton);
 	public void clickdotsincoural() throws InterruptedException {
 		List<WebElement> dotbutton = driver.findElements(By.xpath(dotsxpathincarosual));
 		int countsdots = dotbutton.size();
-		System.out.println("Verify 'Pagination markers' and count of them." + countsdots);
+		System.out.println("Verify 'Pagination markers' and Total Value is----->" + countsdots+  "   clicking on the Next button");
 		for (int i = 0; i < countsdots; i++) {
 			clickonNextButtonOnCarosual();
 			//System.out.println("Next button is clicking");
 			function.sleepMode(2000);
 		}
+		System.out.println("User has clicked on the next button in masterhead carousal");
 	}
 	public boolean clickonbackButtonOnCarosual() throws InterruptedException {
 		backButton = driver.findElement(By.xpath(BackButtononcarousal));
