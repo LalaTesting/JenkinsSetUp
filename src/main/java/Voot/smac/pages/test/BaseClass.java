@@ -81,7 +81,8 @@ public class BaseClass
 			
 		}
 
-		driver.get("https://alpha.voot.com/");
+	driver.get("https://alpha.voot.com/");
+	//	driver.get("https://www.voot.com/");
 		System.out.println("Open the browser,enter the URL,press 'Enter' and navigate to Homepage.");
 		driver.manage().window().maximize();
 		System.out.println("user has maximize the browser");

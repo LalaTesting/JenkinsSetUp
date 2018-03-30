@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Verification of Channel page of voot application in chrome browser"
+<testsuite name="Verification of Channel page in voot application "
            tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="29.483">
+           time="20.431">
   <properties />
   
   
-            <testcase name="Clickonanychannel" time="6.184" classname="Voot.smac.pages.test.ChannelsPageTest" />
-                <testcase name="OverlaywithListofchannels" time="17.159" classname="Voot.smac.pages.test.ChannelsPageTest" />
-                <testcase name="navigateToChannelDetailsPage" time="4.191" classname="Voot.smac.pages.test.ChannelsPageTest" />
-                <testcase name="mousehover_ChannelsInHeaderMenuOfHomepage" time="1.949" classname="Voot.smac.pages.test.ChannelsPageTest" />
+            <testcase name="OverlaywithListofchannels" time="14.245" classname="Voot.smac.pages.test.ChannelsPageTest" />
+                <testcase name="mousehover_ChannelsInHeaderMenuOfHomepage" time="0.680" classname="Voot.smac.pages.test.ChannelsPageTest" />
+                <testcase name="Clickonanychannel" time="2.219" classname="Voot.smac.pages.test.ChannelsPageTest" />
+                <testcase name="navigateToChannelDetailsPage" time="3.287" classname="Voot.smac.pages.test.ChannelsPageTest" />
       
 </testsuite>

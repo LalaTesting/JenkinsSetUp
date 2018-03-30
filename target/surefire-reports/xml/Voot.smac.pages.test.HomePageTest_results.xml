@@ -1,133 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Verification of Home page of voot application in chrome /firefox   browser"
-           tests="27"
-           failures="1"
+           tests="5"
+           failures="0"
            errors="0"
-           skipped="21"
-           time="4.363">
+           skipped="0"
+           time="181.239">
   <properties />
-            <testcase name="setBrowsers" time="0.000" classname="Voot.smac.pages.test.HomePageTest">
-                <failure type="org.openqa.selenium.WebDriverException"
-                  message="Failed to decode response from marionette
-Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
-System info: host: &apos;VDC01DLLAP0284&apos;, ip: &apos;192.168.23.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_45&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\RAVIND~1.PAR\AppData\Local\Temp\rust_mozprofile.wYMW3WIQajLp, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=6.1, moz:processID=9816.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: f2f537a9-ee55-44d3-a3ed-f7e19eec6d71"
-              >
-<![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
-Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
-System info: host: 'VDC01DLLAP0284', ip: '192.168.23.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\RAVIND~1.PAR\AppData\Local\Temp\rust_mozprofile.wYMW3WIQajLp, rotatable=false, timeouts={implicit=0.0, page load=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=6.1, moz:processID=9816.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt}]
-Session ID: f2f537a9-ee55-44d3-a3ed-f7e19eec6d71
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
-  Voot.smac.pages.test.BaseClass.setBrowsers(BaseClass.java:77)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:497)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-  org.testng.TestRunner.privateRun(TestRunner.java:767)
-  org.testng.TestRunner.run(TestRunner.java:617)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
-]]>
-      </failure>
-
-          </testcase>
   
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="endReport" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="setBrowsers" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="tearDown" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyAddBannerSectionl" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyuserloginiconinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyMoviesmenuinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifyDescriptionTextValueOFMasterCarousal" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="verifySearchinHomepage" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="clickOnThePreviousButtonOnCoursoual" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
-            <testcase name="clickOnTheNextButtonOnCoursoual" time="0.0" classname="Voot.smac.pages.test.HomePageTest">
-          <skipped />
-    </testcase>
   
-            <testcase name="verifynewshowLinkinHomePage" time="0.818" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyVootLogoinHomePage" time="0.740" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifykidsmenuinHomepage" time="0.448" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyChannelsmenuinHomepage" time="1.382" classname="Voot.smac.pages.test.HomePageTest" />
-                <testcase name="verifyshowsmenuinHomepage" time="0.974" classname="Voot.smac.pages.test.HomePageTest" />
+            <testcase name="verifyDescriptionTextValueOFMasterCarousal" time="12.337" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyAddBannerSectionl" time="121.984" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyVootLogoinHomePage" time="2.127" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="clickOnThePreviousButtonOnCoursoual" time="2.681" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="clickOnTheNextButtonOnCoursoual" time="42.110" classname="Voot.smac.pages.test.HomePageTest" />
       
 </testsuite>

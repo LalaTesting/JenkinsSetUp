@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Verification of movie page of voot application in chrome browser"
+<testsuite name="Verification of movie page in voot application"
            tests="5"
            failures="0"
            errors="0"
            skipped="0"
-           time="87.310">
+           time="83.149">
   <properties />
   
   
-            <testcase name="verifyPopularkannadaMoviesValue" time="20.075" classname="Voot.smac.pages.test.MoviesPageTest" />
-                <testcase name="verifyPopularKidsMoviesValue" time="18.158" classname="Voot.smac.pages.test.MoviesPageTest" />
-                <testcase name="verifyPopularBangaliMoviesValue" time="18.144" classname="Voot.smac.pages.test.MoviesPageTest" />
-                <testcase name="verifyPopularHindiMoviesValue" time="18.685" classname="Voot.smac.pages.test.MoviesPageTest" />
-                <testcase name="mousehoveronMoviesintheheaderandverify" time="12.248" classname="Voot.smac.pages.test.MoviesPageTest" />
+            <testcase name="verifyPopularKidsMoviesValue" time="17.788" classname="Voot.smac.pages.test.MoviesPageTest" />
+                <testcase name="verifyPopularkannadaMoviesValue" time="17.879" classname="Voot.smac.pages.test.MoviesPageTest" />
+                <testcase name="verifyPopularBangaliMoviesValue" time="17.763" classname="Voot.smac.pages.test.MoviesPageTest" />
+                <testcase name="verifyPopularHindiMoviesValue" time="17.979" classname="Voot.smac.pages.test.MoviesPageTest" />
+                <testcase name="mousehoveronMoviesintheheaderandverify" time="11.740" classname="Voot.smac.pages.test.MoviesPageTest" />
       
 </testsuite>

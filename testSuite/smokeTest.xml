@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel test suite" parallel="tests">
+<suite name="Parallel test suite" parallel="false">
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
@@ -8,12 +8,12 @@
 	<test
 		name="Verification of Home page of voot application in chrome /firefox
 		browser">
-		<parameter name="browsers" value="firefox" />
+		<parameter name="browsers" value="chrome" />
 		<classes>
 			<class name="Voot.smac.pages.test.HomePageTest" />
 		</classes>
 	</test>
-
+<!--  
 	<test name="Verification of Show page of voot application in chrome browser">
 		<parameter name="browsers" value="chrome" />
 		<classes>
@@ -21,7 +21,7 @@
 		</classes>
 	</test>
 	<test name="Verification of voot login page  in voot application ">
-		<parameter name="browsers" value="firefox" />
+		<parameter name="browsers" value="chrome" />
 		<classes>
 			<class name="Voot.smac.pages.test.VootLoginPageTest" />
 		</classes>
@@ -47,5 +47,5 @@
 			<class name="Voot.smac.pages.test.SearchPageTest" />
 		</classes>
 	</test>
- 
+ -->
 </suite>

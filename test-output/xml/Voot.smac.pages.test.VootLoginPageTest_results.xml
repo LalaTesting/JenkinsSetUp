@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Verification of voot login page  firefox browser"
+<testsuite name="Verification of voot login page  in voot application "
            tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="37.177">
+           time="32.124">
   <properties />
   
   
-            <testcase name="enter_valid_Email_In_input_Text_field" time="5.230" classname="Voot.smac.pages.test.VootLoginPageTest" />
-                <testcase name="verifyLoginScreeen" time="27.195" classname="Voot.smac.pages.test.VootLoginPageTest" />
-                <testcase name="EnterbankEmailidandverifyerrormessage" time="4.752" classname="Voot.smac.pages.test.VootLoginPageTest" />
+            <testcase name="enter_valid_Email_In_input_Text_field" time="4.252" classname="Voot.smac.pages.test.VootLoginPageTest" />
+                <testcase name="verifyLoginScreeen" time="24.781" classname="Voot.smac.pages.test.VootLoginPageTest" />
+                <testcase name="EnterbankEmailidandverifyerrormessage" time="3.091" classname="Voot.smac.pages.test.VootLoginPageTest" />
       
 </testsuite>

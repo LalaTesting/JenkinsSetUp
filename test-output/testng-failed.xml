@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test name="Verification of Home page of voot application in chrome /firefox   browser(failed)" parallel="tests">
-    <parameter name="browsers" value="firefox"/>
+  <test name="Verification of Home page of voot application in chrome /firefox   browser(failed)">
+    <parameter name="browsers" value="chrome"/>
     <classes>
       <class name="Voot.smac.pages.test.HomePageTest">
         <methods>
-          <include name="verifySearchinHomepage"/>
           <include name="setBrowsers"/>
-          <include name="verifyMoreButtonInHomePage"/>
-          <include name="verifyuserloginiconinHomepage"/>
-          <include name="verifyDescriptionTextValueOFMasterCarousal"/>
           <include name="setExtent"/>
           <include name="endReport"/>
           <include name="tearDown"/>
-          <include name="clickOnTheNextButtonOnCoursoual"/>
-          <include name="clickOnThePreviousButtonOnCoursoual"/>
-          <include name="verifyAddBannerSectionl"/>
+          <include name="verifyVootLogoinHomePage"/>
         </methods>
       </class> <!-- Voot.smac.pages.test.HomePageTest -->
     </classes>

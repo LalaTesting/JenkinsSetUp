@@ -19,7 +19,7 @@ public class HomaPage_Voot_Application extends Uielements {
 	WebDriver driver;
 	WebElement vootlogo, newShow, showdrop_down, Kidsdrop_down, channeldrop_down, Moviesdrop_down, searchIcon,
 			dotbutton, clickingonthe5dots, UserLoginIcon, NextButton, backButton, adbanner_body,masterCoroselDescription,
-			playanycarosuoul,morebuttton,firstTrayName;
+			playanycarosuoul,morebuttton,firstTrayName,firstTrayNameinHomepage;
 	GenericFunctions function = new GenericFunctions(driver);
 
 	public HomaPage_Voot_Application(WebDriver driver) {
@@ -219,7 +219,19 @@ function.highLighterMethod(driver, NextButton);
 		} else
 			return false;
 	}
-	
+	public boolean verifyfirstTrayName() throws InterruptedException {
+		firstTrayNameinHomepage = driver.findElement(By.xpath(HomepageFirstTrayXpath));
+     function.scrollingtillelementvisible(driver, firstTrayNameinHomepage);
+		Reporter.log("first Tray name is  Highlighted");
+		function.sleepMode(2000);
+		if (firstTrayNameinHomepage.isDisplayed()) {
+		String FirstTrayNameValue=	firstTrayNameinHomepage.getText();
+		System.out.println("In Home Page first Tray Is :- -----"+FirstTrayNameValue);
+			//function.sleepMode(2000);
+			return true;
+		} else
+			return false;
+	}
 	public boolean verifyMoreButtonfirstTray() throws InterruptedException{
 		morebuttton=driver.findElement(By.xpath(More_button_firstTray_xpath));
 		function.highLighterMethod(driver, morebuttton);

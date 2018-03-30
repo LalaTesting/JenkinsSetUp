@@ -152,6 +152,12 @@ public void scrollbottomToTopafterclickonthefirstTray(WebDriver driver ) throws 
 	            Thread.sleep(2000);
 	}
 }
+
+public void scrollingtillelementvisible(WebDriver driver,WebElement element) throws InterruptedException{
+	  ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+	   highLighterMethod(driver, element);
+	   sleepMode(9000);
+}
 }
 
 

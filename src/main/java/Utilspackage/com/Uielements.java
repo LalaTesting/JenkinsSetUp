@@ -37,6 +37,7 @@ public class Uielements {
 
 	// first tray more button element and click on the more button first tray
 	// name xpath
+	public static String HomepageFirstTrayXpath="//div[@class='VmediaLargeWithLabel']/preceding-sibling::div[@class='VtitleContainer']/div/h2";
 	public static String More_button_firstTray_xpath = "//div[@class='VmediaLargeWithLabel']/preceding::div[@class='VtitleContainer']//div/a";
 
 	public static String firstTray_xptah = "//h2[@class='VSingletrayTitle']";

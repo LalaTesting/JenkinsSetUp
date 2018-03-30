@@ -24,7 +24,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>SmokeVoot.xml</suiteXmlFile>
+						<suiteXmlFile>E:\\for Android native app which used for testobject\\voot\\testSuite\\smokeTest.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

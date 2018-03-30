@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Verification off Search page of voot application in chrome browser"
+<testsuite name="Verification of Search page in voot application"
            tests="5"
            failures="0"
            errors="0"
            skipped="0"
-           time="25.151">
+           time="23.662">
   <properties />
   
   
-            <testcase name="verify_Close_Icon_In_SearchPage" time="2.915" classname="Voot.smac.pages.test.SearchPageTest" />
-                <testcase name="verify_Search_Icon_In_HomePage" time="2.698" classname="Voot.smac.pages.test.SearchPageTest" />
-                <testcase name="enter_Some_Value_inSide_the_Text_Box_In_SearchPage" time="15.465" classname="Voot.smac.pages.test.SearchPageTest" />
-                <testcase name="verify_Search_Text_Box_In_SearchPage" time="0.287" classname="Voot.smac.pages.test.SearchPageTest" />
-                <testcase name="verify_Search_Icon_In_SearchPage" time="3.786" classname="Voot.smac.pages.test.SearchPageTest" />
+            <testcase name="verify_Search_Icon_In_SearchPage" time="2.893" classname="Voot.smac.pages.test.SearchPageTest" />
+                <testcase name="verify_Search_Text_Box_In_SearchPage" time="0.579" classname="Voot.smac.pages.test.SearchPageTest" />
+                <testcase name="enter_Some_Value_inSide_the_Text_Box_In_SearchPage" time="15.085" classname="Voot.smac.pages.test.SearchPageTest" />
+                <testcase name="verify_Search_Icon_In_HomePage" time="2.281" classname="Voot.smac.pages.test.SearchPageTest" />
+                <testcase name="verify_Close_Icon_In_SearchPage" time="2.824" classname="Voot.smac.pages.test.SearchPageTest" />
       
 </testsuite>
