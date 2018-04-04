@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="false">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test
+		name="Verification of Home page of voot application in chrome /firefox
+		browser">
+		<parameter name="browsers" value="chrome" />
+		<classes>
+			<class name="Voot.smac.pages.test.HomePageTest" />
+		</classes>
+	</test>
+<!--  
+	<test name="Verification of Show page of voot application in chrome browser">
+		<parameter name="browsers" value="chrome" />
+		<classes>
+			<class name="Voot.smac.pages.test.ShowPagesTest" />
+		</classes>
+	</test>
+	<test name="Verification of voot login page  in voot application ">
+		<parameter name="browsers" value="chrome" />
+		<classes>
+			<class name="Voot.smac.pages.test.VootLoginPageTest" />
+		</classes>
+	</test>
+	<test
+		name="Verification of Channel page in voot application ">
+		<parameter name="browsers" value="chrome" />
+		<classes>
+			<class name="Voot.smac.pages.test.ChannelsPageTest" />
+		</classes>
+	</test>
+	<test
+		name="Verification of movie page in voot application">
+		<parameter name="browsers" value="chrome" />
+		<classes>
+			<class name="Voot.smac.pages.test.MoviesPageTest" />
+		</classes>
+	</test>
+	<test
+		name="Verification of Search page in voot application">
+		<parameter name="browsers" value="chrome" />
+		<classes>
+			<class name="Voot.smac.pages.test.SearchPageTest" />
+		</classes>
+	</test>
+ -->
+</suite>

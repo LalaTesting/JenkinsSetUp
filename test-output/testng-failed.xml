@@ -14,7 +14,7 @@
           <include name="setExtent"/>
           <include name="endReport"/>
           <include name="tearDown"/>
-          <include name="verifyVootLogoinHomePage"/>
+          <include name="verifyAddBannerSectionl"/>
         </methods>
       </class> <!-- Voot.smac.pages.test.HomePageTest -->
     </classes>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[voot logo is present and it is displaying in the portal]]>
+    </line>
+    <line>
+      <![CDATA[voot logo is present in home page]]>
+    </line>
+    <line>
+      <![CDATA[showName and it is displaying & RISING STAR S02 is clickable in the portal]]>
+    </line>
+    <line>
+      <![CDATA[New show is present in home page]]>
+    </line>
+    <line>
+      <![CDATA[showsNameinshowmenu showsNameinshowmenu it is displaying & clickable in the portal]]>
+    </line>
+    <line>
+      <![CDATA[show Menu is present in home page]]>
+    </line>
+    <line>
+      <![CDATA[kids link is displaying and it is clickable in the portal]]>
+    </line>
+    <line>
+      <![CDATA[Kids Tab  is present in home page]]>
+    </line>
+    <line>
+      <![CDATA[channls link is displaying and it is clickable in the portal]]>
+    </line>
+    <line>
+      <![CDATA[Channel menu & Tab  is present in home page]]>
+    </line>
+    <line>
+      <![CDATA[Movies link is displaying and it is clickable in the portal]]>
+    </line>
+    <line>
+      <![CDATA[Channel menu & Tab  is present in home page]]>
+    </line>
+    <line>
+      <![CDATA[Search icon is displaying and it is clickable in the portal]]>
+    </line>
+    <line>
+      <![CDATA[Search icon is present in home page]]>
+    </line>
+    <line>
+      <![CDATA[User login logo is displaying and it is clickable in the portal]]>
+    </line>
+    <line>
+      <![CDATA[Profile icon is present in home page]]>
+    </line>
+    <line>
+      <![CDATA[Ad banner has been  Highlighted]]>
+    </line>
+    <line>
+      <![CDATA[Ad Banner is displaying on the home page screen]]>
+    </line>
+  </reporter-output>
+  <suite name="Parallel test suite" duration-ms="138646" started-at="2018-04-04T10:15:11Z" finished-at="2018-04-04T10:17:30Z">
+    <groups>
+    </groups>
+    <test name="Verification of Home page of voot application in chrome /firefox   browser" duration-ms="138646" started-at="2018-04-04T10:15:11Z" finished-at="2018-04-04T10:17:30Z">
+      <class name="Voot.smac.pages.test.HomePageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2]" name="setExtent" is-config="true" duration-ms="400" started-at="2018-04-04T15:45:11Z" finished-at="2018-04-04T15:45:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2]" name="setBrowsers" is-config="true" duration-ms="11238" started-at="2018-04-04T15:45:12Z" finished-at="2018-04-04T15:45:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowsers -->
+        <test-method status="PASS" signature="verifyVootLogoinHomePage()[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2]" name="verifyVootLogoinHomePage" duration-ms="1738" started-at="2018-04-04T15:45:23Z" description="Verify Mega menu options in the Homepage of &#039;Voot&#039; Application " finished-at="2018-04-04T15:45:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[voot logo is present and it is displaying in the portal]]>
+            </line>
+            <line>
+              <![CDATA[voot logo is present in home page]]>
+            </line>
+            <line>
+              <![CDATA[showName and it is displaying & RISING STAR S02 is clickable in the portal]]>
+            </line>
+            <line>
+              <![CDATA[New show is present in home page]]>
+            </line>
+            <line>
+              <![CDATA[showsNameinshowmenu showsNameinshowmenu it is displaying & clickable in the portal]]>
+            </line>
+            <line>
+              <![CDATA[show Menu is present in home page]]>
+            </line>
+            <line>
+              <![CDATA[kids link is displaying and it is clickable in the portal]]>
+            </line>
+            <line>
+              <![CDATA[Kids Tab  is present in home page]]>
+            </line>
+            <line>
+              <![CDATA[channls link is displaying and it is clickable in the portal]]>
+            </line>
+            <line>
+              <![CDATA[Channel menu & Tab  is present in home page]]>
+            </line>
+            <line>
+              <![CDATA[Movies link is displaying and it is clickable in the portal]]>
+            </line>
+            <line>
+              <![CDATA[Channel menu & Tab  is present in home page]]>
+            </line>
+            <line>
+              <![CDATA[Search icon is displaying and it is clickable in the portal]]>
+            </line>
+            <line>
+              <![CDATA[Search icon is present in home page]]>
+            </line>
+            <line>
+              <![CDATA[User login logo is displaying and it is clickable in the portal]]>
+            </line>
+            <line>
+              <![CDATA[Profile icon is present in home page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyVootLogoinHomePage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2]" name="tearDown" is-config="true" duration-ms="1932" started-at="2018-04-04T15:45:24Z" finished-at="2018-04-04T15:45:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyVootLogoinHomePage status=SUCCESS method=HomePageTest.verifyVootLogoinHomePage()[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2] output=voot logo is present and it is displaying in the portal]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setBrowsers(java.lang.String)[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2]" name="setBrowsers" is-config="true" duration-ms="8917" started-at="2018-04-04T15:45:26Z" finished-at="2018-04-04T15:45:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowsers -->
+        <test-method status="PASS" signature="verifyAddBannerSectionl()[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2]" name="verifyAddBannerSectionl" duration-ms="111854" started-at="2018-04-04T15:45:35Z" description="verify weather User is able to see add banner in home page" finished-at="2018-04-04T15:47:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Ad banner has been  Highlighted]]>
+            </line>
+            <line>
+              <![CDATA[Ad Banner is displaying on the home page screen]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAddBannerSectionl -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2]" name="tearDown" is-config="true" duration-ms="2124" started-at="2018-04-04T15:47:27Z" finished-at="2018-04-04T15:47:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddBannerSectionl status=SUCCESS method=HomePageTest.verifyAddBannerSectionl()[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2] output=Ad banner has been  Highlighted]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:Voot.smac.pages.test.HomePageTest@523884b2]" name="endReport" is-config="true" duration-ms="428" started-at="2018-04-04T15:47:29Z" finished-at="2018-04-04T15:47:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- Voot.smac.pages.test.HomePageTest -->
+    </test> <!-- Verification of Home page of voot application in chrome /firefox   browser -->
+  </suite> <!-- Parallel test suite -->
+</testng-results>

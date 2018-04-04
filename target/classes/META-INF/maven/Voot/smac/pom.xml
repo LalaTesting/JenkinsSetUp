@@ -22,15 +22,13 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.18.1</version>
 				<configuration>
-					<suiteXmlFiles>
-						<!-- TestNG suite XML files -->
-						<suiteXmlFile>E:\\for Android native app which used for testobject\\voot\\testSuite\\smokeTest.xml</suiteXmlFile>
-					</suiteXmlFiles>
+			 <suiteXmlFiles>
+                    <suiteXmlFile>smokeTest.xml</suiteXmlFile>
+                </suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-
   <dependencies>
    <dependency>
         <groupId>org.seleniumhq.selenium</groupId>

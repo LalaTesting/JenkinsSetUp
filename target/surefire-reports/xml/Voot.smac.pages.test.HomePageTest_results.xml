@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verification of Home page of voot application in chrome /firefox   browser"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="113.592">
+  <properties />
+  
+  
+            <testcase name="verifyAddBannerSectionl" time="111.854" classname="Voot.smac.pages.test.HomePageTest" />
+                <testcase name="verifyVootLogoinHomePage" time="1.738" classname="Voot.smac.pages.test.HomePageTest" />
+      
+</testsuite>

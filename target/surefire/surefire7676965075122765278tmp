@@ -1,5 +1,5 @@
 #surefire
-#Wed Apr 04 14:48:37 IST 2018
+#Wed Apr 04 15:47:55 IST 2018
 testng.configurator=org.apache.maven.surefire.testng.conf.TestNG652Configurator
 testng.test.classpath=E\:\\for Android native app which used for testobject\\voot\\target\\test-classes
 classPathUrl.0=E\:\\for Android native app which used for testobject\\voot\\target\\test-classes
@@ -84,10 +84,10 @@ childDelegation=false
 testFwJarVersion=6.8
 preferTestsFromInStream=false
 testSuiteDefinitionTestSourceDirectory=E\:\\for Android native app which used for testobject\\voot\\src\\test\\java
-testSuiteXmlFiles0=E\:\\for Android native app which used for testobject\\voot\\testSuite\\smokeTest.xml
+testSuiteXmlFiles0=E\:\\for Android native app which used for testobject\\voot\\smokeTest.xml
 rerunFailingTestsCount=0
 runOrder=filesystem
-runStatisticsFile=E\:\\for Android native app which used for testobject\\voot\\.surefire-803FA69713533666CC91703F1AB5C2C80F5F96FC
+runStatisticsFile=E\:\\for Android native app which used for testobject\\voot\\.surefire-2BABDD668D6C60962C049C78256A5F8D400FBE47
 isTrimStackTrace=true
 reportsDirectory=E\:\\for Android native app which used for testobject\\voot\\target\\surefire-reports
 useSystemClassLoader=true
